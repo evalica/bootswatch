@@ -304,7 +304,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #636b75;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 input,
@@ -360,7 +360,7 @@ img {
   max-width: 100%;
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1522,7 +1522,7 @@ th {
 }
 
 .table .table {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .table-condensed thead > tr > th,
@@ -4075,7 +4075,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
 }
@@ -4106,7 +4106,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs.nav-justified > .active > a {
-  border-bottom-color: #f5f5f5;
+  border-bottom-color: #ffffff;
 }
 
 .nav-pills > li {
@@ -4166,7 +4166,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs-justified > .active > a {
-  border-bottom-color: #f5f5f5;
+  border-bottom-color: #ffffff;
 }
 
 .tabbable:before,
@@ -5277,7 +5277,7 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #f3f3f3;
 }
 
 .jumbotron h1 {
@@ -5314,7 +5314,7 @@ a.list-group-item.active > .badge,
   max-width: 100%;
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5923,8 +5923,8 @@ a.list-group-item:focus {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: #f3f3f3;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -7230,6 +7230,10 @@ td.visible-print {
 
 /* VALUE: $theme.pageBackgroundColor; */
 
+/* VALUE: $theme.pageContentBackgroundColor; */
+
+/* VALUE: $theme.backgroundSecondaryColor; */
+
 /* VALUE: $theme.textColor; */
 
 /* VALUE: $theme.textSecondaryColor; */
@@ -7342,6 +7346,8 @@ td.visible-print {
 
 /*OLD: #fff; */
 
+/* OLD: @gray-lighter; */
+
 /* OLD: #c09853; */
 
 /* OLD: #fcf8e3; */
@@ -7357,6 +7363,8 @@ td.visible-print {
 /* OLD: #3a87ad; */
 
 /* OLD: #d9edf7; */
+
+/* OLD: #f5f5f5; */
 
 /* OLD: @gray-light; */
 
@@ -7486,6 +7494,10 @@ h5,
 h6 {
   color: #2173af;
   border-bottom: 1px dotted #e8e8e8;
+}
+
+.table th {
+  background-color: #f3f3f3;
 }
 
 .clearfix:before,

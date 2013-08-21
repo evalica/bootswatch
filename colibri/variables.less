@@ -10,6 +10,9 @@
 // -------------------------
 
 @theme-pageBackgroundColor:            #F5F5F5; /* VALUE: $theme.pageBackgroundColor; */
+@theme-pageContentBackgroundColor:     #FFFFFF; /* VALUE: $theme.pageContentBackgroundColor; */
+@theme-backgroundSecondaryColor:       #F3F3F3; /* VALUE: $theme.backgroundSecondaryColor; */
+
 @theme-textColor:                      #636B75; /* VALUE: $theme.textColor; */
 @theme-textSecondaryColor:             #9F9F9F; /* VALUE: $theme.textSecondaryColor; */
 @theme-titleColor:                     #2173AF; /* VALUE: $theme.titleColor; */
@@ -54,7 +57,7 @@
 // Scaffolding
 // -------------------------
 
-@body-bg:               @theme-pageBackgroundColor; /* OLD: #fff; */
+@body-bg:               @theme-pageContentBackgroundColor; /* OLD: #fff; */
 @text-color:            @theme-textColor; /* OLD: @gray-dark; */
 
 // Links
@@ -381,7 +384,7 @@
 
 @jumbotron-padding:              30px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   @gray-lighter;
+@jumbotron-bg:                   @theme-backgroundSecondaryColor; /* OLD: @gray-lighter; */
 
 @jumbotron-heading-color:        inherit;
 
@@ -558,7 +561,7 @@
 
 // Wells
 // -------------------------
-@well-bg:                     #f5f5f5;
+@well-bg:                     @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
 
 
 // Badges
