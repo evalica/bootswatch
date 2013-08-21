@@ -16,8 +16,13 @@
 @theme-borderColor:                  #E8E8E8; /* VALUE: $theme.borderColor; */
 @theme-linkColor:                    #0089DC; /* VALUE: $theme.linkColor; */
 
+@theme-menuBackgroundColor:          #0272A6; /* VALUE: $theme.menuBackgroundColor; */
+@theme-menuLinkColor:                #F3F3F3; /* VALUE: $theme.menuLinkColor; */
+
+@theme-menuContentBackgroundColor:   #E1E1E1; /* VALUE: $theme.menuBackgroundColor; */
+@theme-menuContentLinkColor:         #4D5860; /* VALUE: $theme.menuBackgroundColor; */
+
 @theme-buttonPrimaryBackgroundColor: @theme-titleColor; /* VALUE: $theme.buttonPrimaryBackgroundColor; */
-@theme-buttonPrimaryGradientColor:   @theme-linkColor; /* VALUE: $theme.buttonPrimaryGradientColor; */
 
 @theme-notificationInfoColor:        #336699; /* VALUE: $theme.notificationInfoColor; */
 @theme-notificationSuccessColor:     #008000; /* VALUE: $theme.notificationSuccessColor; */
@@ -256,20 +261,20 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-color:             @theme-menuContentLinkColor; /* OLD: #777; */
+@navbar-default-bg:                @theme-menuContentBackgroundColor; /* OLD: #f8f8f8; */
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
-@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-color:                @navbar-default-color; /* OLD: #777; */
+@navbar-default-link-hover-color:          darken(@navbar-default-link-color, 15%); /* OLD: #333; */
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 5%); /*OLD: transparent; */
+@navbar-default-link-active-color:         @navbar-default-link-color; /* OLD: #555; */
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 5%); /* OLD: 6.5%; */
+@navbar-default-link-disabled-color:       lighten(@navbar-default-link-color, 20%); /* OLD: #ccc; */
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
@@ -286,22 +291,22 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-color:                      @theme-menuLinkColor; /* OLD: @gray-light; */
+@navbar-inverse-bg:                         @theme-menuBackgroundColor; /* OLD: #222; */
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @gray-light;
-@navbar-inverse-link-hover-color:           #fff;
-@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-color:                 @navbar-inverse-color; /* OLD: @gray-light; */
+@navbar-inverse-link-hover-color:           lighter(@navbar-inverse-link-color, 15%); /* OLD: #fff; */
+@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 5%); /* OLD: transparent; */
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
-@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%); /* OLD: 10%; */
+@navbar-inverse-link-disabled-color:        lighten(@navbar-inverse-link-color, 20%); /* OLD: #444;*/
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-color:          darken(@navbar-inverse-link-color, 10%); /*OLD: #fff; */
 @navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar search
@@ -381,19 +386,19 @@
 // -------------------------
 
 @state-warning-text:             @theme-notificationWarningColor; /* OLD: #c09853; */
-@state-warning-bg:               lighten(@theme-notificationWarningColor, 53%); /* OLD: #fcf8e3; */
+@state-warning-bg:               lighten(@state-warning-text, 53%); /* OLD: #fcf8e3; */
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
 @state-danger-text:              @theme-notificationErrorColor; /* OLD: #b94a48; */
-@state-danger-bg:                lighten(@theme-notificationErrorColor, 40%); /* OLD: #f2dede; */
+@state-danger-bg:                lighten(@state-danger-text, 40%); /* OLD: #f2dede; */
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 @state-success-text:             @theme-notificationSuccessColor; /* OLD: #468847; */
-@state-success-bg:               lighten(@theme-notificationSuccessColor, 65%); /* OLD: #dff0d8; */
+@state-success-bg:               lighten(@state-success-text, 65%); /* OLD: #dff0d8; */
 @state-success-border:           darken(spin(@state-success-bg, -10), 10%);
 
 @state-info-text:                @theme-notificationInfoColor; /* OLD: #3a87ad; */
-@state-info-bg:                  lighten(@theme-notificationInfoColor, 50%); /* OLD: #d9edf7; */
+@state-info-bg:                  lighten(@state-info-text, 50%); /* OLD: #d9edf7; */
 @state-info-border:              darken(spin(@state-info-bg, -10), 10%);
 
 
