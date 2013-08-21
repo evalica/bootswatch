@@ -22,7 +22,11 @@
 @theme-menuContentBackgroundColor:   #E1E1E1; /* VALUE: $theme.menuBackgroundColor; */
 @theme-menuContentLinkColor:         #4D5860; /* VALUE: $theme.menuBackgroundColor; */
 
-@theme-buttonPrimaryBackgroundColor: @theme-titleColor; /* VALUE: $theme.buttonPrimaryBackgroundColor; */
+@theme-buttonPrimaryBackgroundColor:   #2173AF; /* VALUE: $theme.buttonPrimaryBackgroundColor; */
+@theme-buttonPrimaryTextColor:         #FFFFFF; /* VALUE: $theme.buttonPrimaryTextColor; */
+
+@theme-buttonSecondaryBackgroundColor: #E1E1E1; /* VALUE: $theme.buttonSecondaryBackgroundColor; */
+@theme-buttonSecondaryTextColor:       #4D5860; /* VALUE: $theme.buttonSecondaryTextColor; */
 
 @theme-notificationInfoColor:        #336699; /* VALUE: $theme.notificationInfoColor; */
 @theme-notificationSuccessColor:     #008000; /* VALUE: $theme.notificationSuccessColor; */
@@ -129,31 +133,31 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @theme-buttonSecondaryTextColor; /* OLD: #333; */
+@btn-default-bg:                 @theme-buttonSecondaryBackgroundColor; /* OLD: #fff; */
+@btn-default-border:             @btn-default-bg; /* OLD: #ccc; */
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-color:              @theme-buttonPrimaryTextColor; /* OLD: #fff; */
+@btn-primary-bg:                 @theme-buttonPrimaryBackgroundColor; /* OLD: @brand-primary; */
+@btn-primary-border:             @btn-primary-bg; /* OLD: darken(@btn-primary-bg, 5%); */
 
-@btn-success-color:              #fff;
+@btn-success-color:              @btn-primary-color; /* OLD: #fff; */
 @btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
+@btn-success-border:             @btn-success-bg; /* OLD: darken(@btn-success-bg, 5%); */
 
-@btn-warning-color:              #fff;
+@btn-warning-color:              @btn-primary-color; /* OLD: #fff; */
 @btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             darken(@btn-warning-bg, 5%);
+@btn-warning-border:             @btn-warning-bg; /* OLD: darken(@btn-warning-bg, 5%); */
 
-@btn-danger-color:               #fff;
+@btn-danger-color:               @btn-primary-color; /* OLD: #fff; */
 @btn-danger-bg:                  @brand-danger;
-@btn-danger-border:              darken(@btn-danger-bg, 5%);
+@btn-danger-border:              @btn-danger-bg; /* OLD: darken(@btn-danger-bg, 5%); */
 
-@btn-info-color:                 #fff;
+@btn-info-color:                 @btn-primary-color; /* OLD: #fff; */
 @btn-info-bg:                    @brand-info;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-info-border:                @btn-info-bg; /* OLD: darken(@btn-info-bg, 5%); */
 
-@btn-link-disabled-color:        @gray-light;
+@btn-link-disabled-color:        lighten(@btn-default-color, 20%); /* OLD: @gray-light; */
 
 
 // Forms
