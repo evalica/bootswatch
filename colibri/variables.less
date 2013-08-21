@@ -18,6 +18,7 @@
 @theme-titleColor:                     #2173AF; /* VALUE: $theme.titleColor; */
 @theme-borderColor:                    #E8E8E8; /* VALUE: $theme.borderColor; */
 @theme-linkColor:                      #0089DC; /* VALUE: $theme.linkColor; */
+@theme-highlightColor:                 #FFFFDD; /* VALUE: $theme.highlightColor; */
 
 @theme-menuBackgroundColor:            #0272A6; /* VALUE: $theme.menuBackgroundColor; */
 @theme-menuLinkColor:                  #F3F3F3; /* VALUE: $theme.menuLinkColor; */
@@ -128,7 +129,7 @@
 @table-bg-hover:                     #f5f5f5;
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 #ddd; // table and cell border
+@table-border-color:                 @theme-borderColor; /* OLD: #ddd; */ // table and cell border
 
 
 // Buttons
@@ -170,7 +171,7 @@
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @gray;
-@input-border:                   #ccc;
+@input-border:                   @theme-borderColor; /* OLD: #ccc; */
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
 
@@ -181,7 +182,7 @@
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 @legend-color:                   @gray-dark;
-@legend-border-color:            #e5e5e5;
+@legend-border-color:            transparent; /* OLD: #e5e5e5; */
 
 @input-group-addon-bg:           @gray-lighter;
 @input-group-addon-border-color: @input-border;
@@ -191,9 +192,9 @@
 // -------------------------
 
 @dropdown-bg:                    #fff;
-@dropdown-border:                rgba(0,0,0,.15);
-@dropdown-fallback-border:       #ccc;
-@dropdown-divider-bg:            #e5e5e5;
+@dropdown-border:                @theme-borderColor; /* OLD: rgba(0,0,0,.15); */
+@dropdown-fallback-border:       @theme-borderColor; /* OLD: #ccc; */
+@dropdown-divider-bg:            @theme-borderColor; /* OLD: #e5e5e5; */
 
 @dropdown-link-active-color:     #fff;
 @dropdown-link-active-bg:        @component-active-bg;
@@ -342,15 +343,15 @@
 @nav-open-caret-border-color:               #fff;
 
 // Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                     @theme-borderColor; /* OLD: #ddd; */
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @theme-borderColor; /* OLD: @gray-lighter; */
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
 @nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-border-color:   @theme-borderColor; /* OLD: #ddd; */
 
-@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-link-border-color:            @theme-borderColor; /* OLD: #ddd; */
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 // Pills
@@ -361,22 +362,22 @@
 // Pagination
 // -------------------------
 
-@pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
+@pagination-bg:                        @body-bg; /* OLD: #fff; */
+@pagination-border:                    @theme-borderColor; /* OLD: #ddd; */
 
-@pagination-hover-bg:                  @gray-lighter;
+@pagination-hover-bg:                  @theme-highlightColor; /* OLD: @gray-lighter; */
 
 @pagination-active-bg:                 @brand-primary;
-@pagination-active-color:              #fff;
+@pagination-active-color:              @body-bg; /*OLD: #fff; */
 
-@pagination-disabled-color:            @gray-light;
+@pagination-disabled-color:            @theme-textSecondaryColor; /* OLD: @gray-light; */
 
 
 // Pager
 // -------------------------
 
 @pager-border-radius:                  15px;
-@pager-disabled-color:                 @gray-light;
+@pager-disabled-color:                 @theme-textSecondaryColor; /* OLD: @gray-light; */
 
 
 // Jumbotron
@@ -423,8 +424,8 @@
 // -------------------------
 @popover-bg:                          #fff;
 @popover-max-width:                   276px;
-@popover-border-color:                rgba(0,0,0,.2);
-@popover-fallback-border-color:       #ccc;
+@popover-border-color:                @theme-borderColor; /* OLD: rgba(0,0,0,.2); */
+@popover-fallback-border-color:       @theme-borderColor; /* OLD: #ccc; */
 
 @popover-title-bg:                    darken(@popover-bg, 3%);
 
@@ -457,9 +458,9 @@
 @modal-title-padding:         15px;
 @modal-title-line-height:     @line-height-base;
 
-@modal-content-bg:                             #fff;
-@modal-content-border-color:                   rgba(0,0,0,.2);
-@modal-content-fallback-border-color:          #999;
+@modal-content-bg:                             @body-bg; /* OLD: #fff; */
+@modal-content-border-color:                   @theme-borderColor; /* OLD: rgba(0,0,0,.2); */
+@modal-content-fallback-border-color:          @theme-borderColor; /* OLD: #999; */
 
 @modal-backdrop-bg:           #000;
 @modal-header-border-color:   #e5e5e5;
@@ -503,31 +504,31 @@
 
 // List group
 // -------------------------
-@list-group-bg:               #fff;
-@list-group-border:           #ddd;
+@list-group-bg:               @body-bg; /* OLD: #fff; */
+@list-group-border:           @theme-borderColor; /* OLD: #ddd; */
 @list-group-border-radius:    @border-radius-base;
 
-@list-group-hover-bg:         #f5f5f5;
-@list-group-active-color:     #fff;
+@list-group-hover-bg:         @theme-highlightColor; /* OLD: #f5f5f5; */
+@list-group-active-color:     @body-bg; /* OLD: #fff; */
 @list-group-active-bg:        @component-active-bg;
 @list-group-active-border:    @list-group-active-bg;
 
-@list-group-link-color:          #555;
-@list-group-link-heading-color:  #333;
+@list-group-link-color:          @theme-textColor; /* OLD: #555; */
+@list-group-link-heading-color:  @theme-titleColor; /* OLD: #333; */
 
 
 // Panels
 // -------------------------
-@panel-bg:                    #fff;
-@panel-inner-border:          #ddd;
+@panel-bg:                    @body-bg; /* OLD: #fff; */
+@panel-inner-border:          @theme-borderColor; /* OLD: #ddd; */
 @panel-border-radius:         @border-radius-base;
-@panel-footer-bg:             #f5f5f5;
+@panel-footer-bg:             @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
 
 @panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-border:        @theme-borderColor; /* OLD: #ddd; */
+@panel-default-heading-bg:    @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
 
-@panel-primary-text:          #fff;
+@panel-primary-text:          @theme-buttonPrimaryTextColor; /* OLD: #fff; */
 @panel-primary-border:        lighten(@brand-primary, 30%);
 @panel-primary-heading-bg:    lighten(@brand-primary, 30%);
 
@@ -552,7 +553,7 @@
 // -------------------------
 @thumbnail-padding:           4px;
 @thumbnail-bg:                @body-bg;
-@thumbnail-border:            #ddd;
+@thumbnail-border:            @theme-borderColor; /* OLD: #ddd; */
 @thumbnail-border-radius:     @border-radius-base;
 
 @thumbnail-caption-color:     @text-color;
@@ -615,23 +616,23 @@
 
 @pre-bg:                      #f5f5f5;
 @pre-color:                   @gray-dark;
-@pre-border-color:            #ccc;
+@pre-border-color:            @theme-borderColor; /* OLD: #ccc; */
 @pre-scrollable-max-height:   340px;
 
 // Type
 // ------------------------
 @text-muted:                  @theme-textSecondaryColor; /* OLD: @gray-light; */
-@abbr-border-color:           @gray-light;
+@abbr-border-color:           @theme-borderColor; /* OLD: @gray-light; */
 @headings-small-color:        @gray-light;
 @blockquote-small-color:      @gray-light;
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     @theme-borderColor; /* OLD: @gray-lighter; */
 @page-header-border-color:    none; /* OLD: @gray-lighter; */
 
 // Miscellaneous
 // -------------------------
 
 // Hr border color
-@hr-border:                   @gray-lighter;
+@hr-border:                   @theme-borderColor; /* OLD: @gray-lighter; */
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
