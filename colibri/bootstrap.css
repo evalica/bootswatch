@@ -4993,7 +4993,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  background-color: #ff0000;
+  background-color: #ffffdd;
 }
 
 .pagination > .active > a,
@@ -5128,7 +5128,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #ff0000;
+  background-color: #ffffdd;
 }
 
 .pager .next > a,
@@ -5633,7 +5633,7 @@ a.list-group-item .list-group-item-heading {
 a.list-group-item:hover,
 a.list-group-item:focus {
   text-decoration: none;
-  background-color: #ff0000;
+  background-color: #ffffdd;
 }
 
 .list-group-item.active,
@@ -7241,7 +7241,7 @@ td.visible-print {
 
 /* VALUE: $theme.linkColor; */
 
-/*#FFFFDD; /* VALUE: $theme.highlightColor; */
+/* VALUE: $theme.highlightColor; */
 
 /* VALUE: $theme.menuBackgroundColor; */
 
