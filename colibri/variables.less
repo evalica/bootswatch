@@ -9,61 +9,61 @@
 // XWiki ColorTheme mapping
 // -------------------------
 
-@theme-pageBackgroundColor:            #F5F5F5; /* VALUE: $theme.pageBackgroundColor; */
-@theme-pageContentBackgroundColor:     #FFFFFF; /* VALUE: $theme.pageContentBackgroundColor; */
-@theme-backgroundSecondaryColor:       #F3F3F3; /* VALUE: $theme.backgroundSecondaryColor; */
+@theme-pageBackgroundColor:            #F5F5F5; // VALUE: $theme.pageBackgroundColor;
+@theme-pageContentBackgroundColor:     #FFFFFF; // VALUE: $theme.pageContentBackgroundColor;
+@theme-backgroundSecondaryColor:       #F3F3F3; // VALUE: $theme.backgroundSecondaryColor;
 
-@theme-textColor:                      #636B75; /* VALUE: $theme.textColor; */
-@theme-textSecondaryColor:             #9F9F9F; /* VALUE: $theme.textSecondaryColor; */
-@theme-titleColor:                     #2173AF; /* VALUE: $theme.titleColor; */
-@theme-borderColor:                    #E8E8E8; /* VALUE: $theme.borderColor; */
-@theme-linkColor:                      #0089DC; /* VALUE: $theme.linkColor; */
-@theme-highlightColor:                 #FFFFDD; /* VALUE: $theme.highlightColor; */
+@theme-textColor:                      #636B75; // VALUE: $theme.textColor;
+@theme-textSecondaryColor:             #9F9F9F; // VALUE: $theme.textSecondaryColor;
+@theme-titleColor:                     #2173AF; // VALUE: $theme.titleColor;
+@theme-borderColor:                    #E8E8E8; // VALUE: $theme.borderColor;
+@theme-linkColor:                      #0089DC; // VALUE: $theme.linkColor;
+@theme-highlightColor:                 #FFFFDD; // VALUE: $theme.highlightColor;
 
-@theme-menuBackgroundColor:            #0272A6; /* VALUE: $theme.menuBackgroundColor; */
-@theme-menuLinkColor:                  #F3F3F3; /* VALUE: $theme.menuLinkColor; */
+@theme-menuBackgroundColor:            #0272A6; // VALUE: $theme.menuBackgroundColor;
+@theme-menuLinkColor:                  #F3F3F3; // VALUE: $theme.menuLinkColor;
 
-@theme-menuContentBackgroundColor:     #E1E1E1; /* VALUE: $theme.menuBackgroundColor; */
-@theme-menuContentLinkColor:           #4D5860; /* VALUE: $theme.menuBackgroundColor; */
+@theme-menuContentBackgroundColor:     #E1E1E1; // VALUE: $theme.menuBackgroundColor;
+@theme-menuContentLinkColor:           #4D5860; // VALUE: $theme.menuBackgroundColor;
 
-@theme-buttonPrimaryBackgroundColor:   #2173AF; /* VALUE: $theme.buttonPrimaryBackgroundColor; */
-@theme-buttonPrimaryTextColor:         #FFFFFF; /* VALUE: $theme.buttonPrimaryTextColor; */
+@theme-buttonPrimaryBackgroundColor:   #2173AF; // VALUE: $theme.buttonPrimaryBackgroundColor;
+@theme-buttonPrimaryTextColor:         #FFFFFF; // VALUE: $theme.buttonPrimaryTextColor;
 
-@theme-buttonSecondaryBackgroundColor: #E1E1E1; /* VALUE: $theme.buttonSecondaryBackgroundColor; */
-@theme-buttonSecondaryTextColor:       #4D5860; /* VALUE: $theme.buttonSecondaryTextColor; */
+@theme-buttonSecondaryBackgroundColor: #E1E1E1; // VALUE: $theme.buttonSecondaryBackgroundColor;
+@theme-buttonSecondaryTextColor:       #4D5860; // VALUE: $theme.buttonSecondaryTextColor;
 
-@theme-notificationInfoColor:          #336699; /* VALUE: $theme.notificationInfoColor; */
-@theme-notificationSuccessColor:       #008000; /* VALUE: $theme.notificationSuccessColor; */
-@theme-notificationWarningColor:       #D09000; /* VALUE: $theme.notificationWarningColor; */
-@theme-notificationErrorColor:         #CC3333; /* VALUE: $theme.notificationErrorColor; */
+@theme-notificationInfoColor:          #336699; // VALUE: $theme.notificationInfoColor;
+@theme-notificationSuccessColor:       #008000; // VALUE: $theme.notificationSuccessColor;
+@theme-notificationWarningColor:       #D09000; // VALUE: $theme.notificationWarningColor;
+@theme-notificationErrorColor:         #CC3333; // VALUE: $theme.notificationErrorColor;
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         @theme-buttonPrimaryBackgroundColor; /* OLD: #428bca; */
-@brand-success:         @theme-notificationSuccessColor; /* OLD: #5cb85c; */
-@brand-warning:         @theme-notificationWarningColor; /* OLD: #f0ad4e; */
-@brand-danger:          @theme-notificationErrorColor; /* OLD: #d9534f; */
-@brand-info:            lighten(@theme-notificationInfoColor, 20%); /* OLD: #5bc0de; */
+@brand-primary:         @theme-buttonPrimaryBackgroundColor; // OLD: #428bca;
+@brand-success:         @theme-notificationSuccessColor; // OLD: #5cb85c;
+@brand-warning:         @theme-notificationWarningColor; // OLD: #f0ad4e;
+@brand-danger:          @theme-notificationErrorColor; // OLD: #d9534f;
+@brand-info:            lighten(@theme-notificationInfoColor, 20%); // OLD: #5bc0de;
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               @theme-pageContentBackgroundColor; /* OLD: #fff; */
-@text-color:            @theme-textColor; /* OLD: @gray-dark; */
+@body-bg:               @theme-pageContentBackgroundColor; // OLD: #fff;
+@text-color:            @theme-textColor; // OLD: @gray-dark;
 
 // Links
 // -------------------------
 
-@link-color:            @theme-linkColor; /* OLD: @brand-primary; */
+@link-color:            @theme-linkColor; // OLD: @brand-primary;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  sans-serif; /* OLD: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-@font-family-serif:       serif; /* OLD: Georgia, "Times New Roman", Times, serif; */
-@font-family-monospace:   monospace; /* OLD: Monaco, Menlo, Consolas, "Courier New", monospace; */
+@font-family-sans-serif:  sans-serif; // OLD: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       serif; // OLD: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   monospace; // OLD: Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          14px;
@@ -104,8 +104,8 @@
 @border-radius-large:            6px;
 @border-radius-small:            3px;
 
-@component-active-bg:            @theme-buttonPrimaryBackgroundColor; /* OLD: @brand-primary */
-@component-active-color:         @theme-buttonPrimaryTextColor; /* NEW */
+@component-active-bg:            @theme-buttonPrimaryBackgroundColor; // OLD: @brand-primary
+@component-active-color:         @theme-buttonPrimaryTextColor; // NEW
 
 @caret-width-base:               4px;
 @caret-width-large:              5px;
@@ -117,11 +117,11 @@
 @table-condensed-cell-padding:       5px;
 
 @table-bg:                           transparent; // overall background-color
-@table-bg-accent:                    @theme-backgroundSecondaryColor; /* OLD: #f9f9f9; */ // for striping
-@table-bg-hover:                     @theme-highlightColor; /* OLD: #f5f5f5; */
+@table-bg-accent:                    @theme-backgroundSecondaryColor; // OLD: #f9f9f9; // for striping
+@table-bg-hover:                     @theme-highlightColor; // OLD: #f5f5f5;
 @table-bg-active:                    @table-bg-hover;
 
-@table-border-color:                 @theme-borderColor; /* OLD: #ddd; */ // table and cell border
+@table-border-color:                 @theme-borderColor; // OLD: #ddd; // table and cell border
 
 
 // Buttons
@@ -129,77 +129,77 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              @theme-buttonSecondaryTextColor; /* OLD: #333; */
-@btn-default-bg:                 @theme-buttonSecondaryBackgroundColor; /* OLD: #fff; */
-@btn-default-border:             @btn-default-bg; /* OLD: #ccc; */
+@btn-default-color:              @theme-buttonSecondaryTextColor; // OLD: #333;
+@btn-default-bg:                 @theme-buttonSecondaryBackgroundColor; // OLD: #fff;
+@btn-default-border:             @btn-default-bg; // OLD: #ccc;
 
-@btn-primary-color:              @theme-buttonPrimaryTextColor; /* OLD: #fff; */
-@btn-primary-bg:                 @theme-buttonPrimaryBackgroundColor; /* OLD: @brand-primary; */
-@btn-primary-border:             @btn-primary-bg; /* OLD: darken(@btn-primary-bg, 5%); */
+@btn-primary-color:              @theme-buttonPrimaryTextColor; // OLD: #fff;
+@btn-primary-bg:                 @theme-buttonPrimaryBackgroundColor; // OLD: @brand-primary;
+@btn-primary-border:             @btn-primary-bg; // OLD: darken(@btn-primary-bg, 5%);
 
-@btn-success-color:              @btn-primary-color; /* OLD: #fff; */
+@btn-success-color:              @btn-primary-color; // OLD: #fff;
 @btn-success-bg:                 @brand-success;
-@btn-success-border:             @btn-success-bg; /* OLD: darken(@btn-success-bg, 5%); */
+@btn-success-border:             @btn-success-bg; // OLD: darken(@btn-success-bg, 5%);
 
-@btn-warning-color:              @btn-primary-color; /* OLD: #fff; */
+@btn-warning-color:              @btn-primary-color; // OLD: #fff;
 @btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             @btn-warning-bg; /* OLD: darken(@btn-warning-bg, 5%); */
+@btn-warning-border:             @btn-warning-bg; // OLD: darken(@btn-warning-bg, 5%);
 
-@btn-danger-color:               @btn-primary-color; /* OLD: #fff; */
+@btn-danger-color:               @btn-primary-color; // OLD: #fff;
 @btn-danger-bg:                  @brand-danger;
-@btn-danger-border:              @btn-danger-bg; /* OLD: darken(@btn-danger-bg, 5%); */
+@btn-danger-border:              @btn-danger-bg; // OLD: darken(@btn-danger-bg, 5%);
 
-@btn-info-color:                 @btn-primary-color; /* OLD: #fff; */
+@btn-info-color:                 @btn-primary-color; // OLD: #fff;
 @btn-info-bg:                    @brand-info;
-@btn-info-border:                @btn-info-bg; /* OLD: darken(@btn-info-bg, 5%); */
+@btn-info-border:                @btn-info-bg; // OLD: darken(@btn-info-bg, 5%);
 
-@btn-link-disabled-color:        lighten(@btn-default-color, 20%); /* OLD: @gray-light; */
+@btn-link-disabled-color:        lighten(@btn-default-color, 20%); // OLD: @gray-light;
 
 
 // Forms
 // -------------------------
 
-@input-bg:                       @body-bg; /* OLD: #fff; */
-@input-bg-disabled:              @theme-backgroundSecondaryColor; /* OLD: @gray-lighter; */
+@input-bg:                       @body-bg; // OLD: #fff;
+@input-bg-disabled:              @theme-backgroundSecondaryColor; // OLD: @gray-lighter;
 
-@input-color:                    @theme-textColor; /* OLD: @gray; */
-@input-border:                   @theme-borderColor; /* OLD: #ccc; */
+@input-color:                    @theme-textColor; // OLD: @gray;
+@input-border:                   @theme-borderColor; // OLD: #ccc;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
 
-@input-color-placeholder:        @theme-textSecondaryColor; /* OLD: @gray-light; */
+@input-color-placeholder:        @theme-textSecondaryColor; // OLD: @gray-light;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
-@legend-color:                   @theme-textColor; /* OLD: @gray-dark; */
-@legend-border-color:            transparent; /* OLD: #e5e5e5; */
+@legend-color:                   @theme-textColor; // OLD: @gray-dark;
+@legend-border-color:            transparent; // OLD: #e5e5e5;
 
-@input-group-addon-bg:           @input-bg-disabled; /* OLD: @gray-lighter; */
+@input-group-addon-bg:           @input-bg-disabled; // OLD: @gray-lighter;
 @input-group-addon-border-color: @input-border;
 
 
 // Dropdowns
 // -------------------------
 
-@dropdown-bg:                    @body-bg; /* OLD: #fff; */
-@dropdown-border:                @theme-borderColor; /* OLD: rgba(0,0,0,.15); */
-@dropdown-fallback-border:       @theme-borderColor; /* OLD: #ccc; */
-@dropdown-divider-bg:            @theme-borderColor; /* OLD: #e5e5e5; */
+@dropdown-bg:                    @body-bg; // OLD: #fff;
+@dropdown-border:                @theme-borderColor; // OLD: rgba(0,0,0,.15);
+@dropdown-fallback-border:       @theme-borderColor; // OLD: #ccc;
+@dropdown-divider-bg:            @theme-borderColor; // OLD: #e5e5e5;
 
-@dropdown-link-active-color:     @component-active-color; /* OLD: #fff; */
+@dropdown-link-active-color:     @component-active-color; // OLD: #fff;
 @dropdown-link-active-bg:        @component-active-bg;
 
-@dropdown-link-color:            @theme-textColor; /* OLD: @gray-dark; */
-@dropdown-link-hover-color:      @body-bg; /* OLD: #fff; */
+@dropdown-link-color:            @theme-textColor; // OLD: @gray-dark;
+@dropdown-link-hover-color:      @body-bg; // OLD: #fff;
 @dropdown-link-hover-bg:         @dropdown-link-active-bg;
 
-@dropdown-link-disabled-color:   @theme-textSecondaryColor; /* OLD: @gray-light; */
+@dropdown-link-disabled-color:   @theme-textSecondaryColor; // OLD: @gray-light;
 
-@dropdown-header-color:          @theme-textSecondaryColor; /* OLD: @gray-light; */
+@dropdown-header-color:          @theme-textSecondaryColor; // OLD: @gray-light;
 
-@dropdown-caret-color:           @theme-textColor; /* OLD: #000; */
+@dropdown-caret-color:           @theme-textColor; // OLD: #000;
 
 
 // COMPONENT VARIABLES
@@ -261,20 +261,20 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-default-color:             @theme-menuContentLinkColor; /* OLD: #777; */
-@navbar-default-bg:                @theme-menuContentBackgroundColor; /* OLD: #f8f8f8; */
+@navbar-default-color:             @theme-menuContentLinkColor; // OLD: #777;
+@navbar-default-bg:                @theme-menuContentBackgroundColor; // OLD: #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
-@navbar-default-link-color:                @navbar-default-color; /* OLD: #777; */
-@navbar-default-link-hover-color:          darken(@navbar-default-link-color, 15%); /* OLD: #333; */
-@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 5%); /* OLD: transparent; */
-@navbar-default-link-active-color:         @navbar-default-link-color; /* OLD: #555; */
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 5%); /* OLD: 6.5%; */
-@navbar-default-link-disabled-color:       lighten(@navbar-default-link-color, 20%); /* OLD: #ccc; */
+@navbar-default-link-color:                @navbar-default-color; // OLD: #777;
+@navbar-default-link-hover-color:          darken(@navbar-default-link-color, 15%); // OLD: #333;
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 5%); // OLD: transparent;
+@navbar-default-link-active-color:         @navbar-default-link-color; // OLD: #555;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 5%); // OLD: 6.5%;
+@navbar-default-link-disabled-color:       lighten(@navbar-default-link-color, 20%); // OLD: #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
@@ -291,30 +291,30 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @theme-menuLinkColor; /* OLD: @gray-light; */
-@navbar-inverse-bg:                         @theme-menuBackgroundColor; /* OLD: #222; */
+@navbar-inverse-color:                      @theme-menuLinkColor; // OLD: @gray-light;
+@navbar-inverse-bg:                         @theme-menuBackgroundColor; // OLD: #222;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 @navbar-inverse-color; /* OLD: @gray-light; */
-@navbar-inverse-link-hover-color:           lighter(@navbar-inverse-link-color, 15%); /* OLD: #fff; */
-@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 5%); /* OLD: transparent; */
+@navbar-inverse-link-color:                 @navbar-inverse-color; // OLD: @gray-light;
+@navbar-inverse-link-hover-color:           lighter(@navbar-inverse-link-color, 15%); // OLD: #fff;
+@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 5%); // OLD: transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%); /* OLD: 10%; */
-@navbar-inverse-link-disabled-color:        lighten(@navbar-inverse-link-color, 20%); /* OLD: #444;*/
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%); // OLD: 10%;
+@navbar-inverse-link-disabled-color:        lighten(@navbar-inverse-link-color, 20%); // OLD: #444;*/
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          darken(@navbar-inverse-link-color, 10%); /* OLD: #fff; */
+@navbar-inverse-brand-hover-color:          darken(@navbar-inverse-link-color, 10%); // OLD: #fff;
 @navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar search
 // Normal navbar needs no special styles or vars
 @navbar-inverse-search-bg:                  lighten(@navbar-inverse-bg, 25%);
-@navbar-inverse-search-bg-focus:            @body-bg; /* OLD: #fff; */
+@navbar-inverse-search-bg-focus:            @body-bg; // OLD: #fff;
 @navbar-inverse-search-border:              @navbar-inverse-bg;
-@navbar-inverse-search-placeholder-color:   @theme-textSecondaryColor; /* OLD: #ccc; */
+@navbar-inverse-search-placeholder-color:   @theme-textSecondaryColor; // OLD: #ccc;
 
 // Inverted navbar toggle
 @navbar-inverse-toggle-hover-bg:            #333;
@@ -326,50 +326,50 @@
 // -------------------------
 
 @nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @theme-backgroundSecondaryColor; /* OLD: @gray-lighter; */
+@nav-link-hover-bg:                         @theme-backgroundSecondaryColor; // OLD: @gray-lighter;
 
-@nav-disabled-link-color:                   @theme-textSecondaryColor; /* OLD: @gray-light; */
-@nav-disabled-link-hover-color:             @theme-textSecondaryColor; /* OLD: @gray-light; */
+@nav-disabled-link-color:                   @theme-textSecondaryColor; // OLD: @gray-light;
+@nav-disabled-link-hover-color:             @theme-textSecondaryColor; // OLD: @gray-light;
 
 @nav-open-link-hover-color:                 #fff;
 @nav-open-caret-border-color:               #fff;
 
 // Tabs
-@nav-tabs-border-color:                     @theme-borderColor; /* OLD: #ddd; */
+@nav-tabs-border-color:                     @theme-borderColor; // OLD: #ddd;
 
-@nav-tabs-link-hover-border-color:          @theme-borderColor; /* OLD: @gray-lighter; */
+@nav-tabs-link-hover-border-color:          @theme-borderColor; // OLD: @gray-lighter;
 
 @nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @theme-textColor; /* OLD: @gray; */
-@nav-tabs-active-link-hover-border-color:   @theme-borderColor; /* OLD: #ddd; */
+@nav-tabs-active-link-hover-color:          @theme-textColor; // OLD: @gray;
+@nav-tabs-active-link-hover-border-color:   @theme-borderColor; // OLD: #ddd;
 
-@nav-tabs-justified-link-border-color:            @theme-borderColor; /* OLD: #ddd; */
+@nav-tabs-justified-link-border-color:            @theme-borderColor; // OLD: #ddd;
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 // Pills
 @nav-pills-active-link-hover-bg:            @component-active-bg;
-@nav-pills-active-link-hover-color:         @component-active-color; /* OLD: #fff; */
+@nav-pills-active-link-hover-color:         @component-active-color; // OLD: #fff;
 
 
 // Pagination
 // -------------------------
 
-@pagination-bg:                        @body-bg; /* OLD: #fff; */
-@pagination-border:                    @theme-borderColor; /* OLD: #ddd; */
+@pagination-bg:                        @body-bg; // OLD: #fff;
+@pagination-border:                    @theme-borderColor; // OLD: #ddd;
 
-@pagination-hover-bg:                  @theme-highlightColor; /* OLD: @gray-lighter; */
+@pagination-hover-bg:                  @theme-highlightColor; // OLD: @gray-lighter;
 
-@pagination-active-bg:                 @component-active-bg; /* OLD: @brand-primary; */
-@pagination-active-color:              @component-active-color; /* OLD: #fff; */
+@pagination-active-bg:                 @component-active-bg; // OLD: @brand-primary;
+@pagination-active-color:              @component-active-color; // OLD: #fff;
 
-@pagination-disabled-color:            @theme-textSecondaryColor; /* OLD: @gray-light; */
+@pagination-disabled-color:            @theme-textSecondaryColor; // OLD: @gray-light;
 
 
 // Pager
 // -------------------------
 
 @pager-border-radius:                  15px;
-@pager-disabled-color:                 @theme-textSecondaryColor; /* OLD: @gray-light; */
+@pager-disabled-color:                 @theme-textSecondaryColor; // OLD: @gray-light;
 
 
 // Jumbotron
@@ -377,7 +377,7 @@
 
 @jumbotron-padding:              30px;
 @jumbotron-color:                inherit;
-@jumbotron-bg:                   @theme-backgroundSecondaryColor; /* OLD: @gray-lighter; */
+@jumbotron-bg:                   @theme-backgroundSecondaryColor; // OLD: @gray-lighter;
 
 @jumbotron-heading-color:        inherit;
 
@@ -385,20 +385,20 @@
 // Form states and alerts
 // -------------------------
 
-@state-warning-text:             @theme-notificationWarningColor; /* OLD: #c09853; */
-@state-warning-bg:               lighten(@state-warning-text, 53%); /* OLD: #fcf8e3; */
+@state-warning-text:             @theme-notificationWarningColor; // OLD: #c09853;
+@state-warning-bg:               lighten(@state-warning-text, 53%); // OLD: #fcf8e3;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text:              @theme-notificationErrorColor; /* OLD: #b94a48; */
-@state-danger-bg:                lighten(@state-danger-text, 40%); /* OLD: #f2dede; */
+@state-danger-text:              @theme-notificationErrorColor; // OLD: #b94a48;
+@state-danger-bg:                lighten(@state-danger-text, 40%); // OLD: #f2dede;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
-@state-success-text:             @theme-notificationSuccessColor; /* OLD: #468847; */
-@state-success-bg:               lighten(@state-success-text, 65%); /* OLD: #dff0d8; */
+@state-success-text:             @theme-notificationSuccessColor; // OLD: #468847;
+@state-success-bg:               lighten(@state-success-text, 65%); // OLD: #dff0d8;
 @state-success-border:           darken(spin(@state-success-bg, -10), 10%);
 
-@state-info-text:                @theme-notificationInfoColor; /* OLD: #3a87ad; */
-@state-info-bg:                  lighten(@state-info-text, 50%); /* OLD: #d9edf7; */
+@state-info-text:                @theme-notificationInfoColor; // OLD: #3a87ad;
+@state-info-bg:                  lighten(@state-info-text, 50%); // OLD: #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 10%);
 
 
@@ -432,15 +432,15 @@
 // Labels
 // -------------------------
 
-@label-default-bg:            darken(@theme-backgroundSecondaryColor, 50%); /* OLD: @gray-light; */
+@label-default-bg:            darken(@theme-backgroundSecondaryColor, 50%); // OLD: @gray-light;
 @label-primary-bg:            @brand-primary;
 @label-success-bg:            @brand-success;
 @label-info-bg:               @brand-info;
 @label-warning-bg:            @brand-warning;
 @label-danger-bg:             @brand-danger;
 
-@label-color:                 @body-bg; /* OLD: #fff; */
-@label-link-hover-color:      @body-bg; /* OLD: #fff; */
+@label-color:                 @body-bg; // OLD: #fff;
+@label-link-hover-color:      @body-bg; // OLD: #fff;
 
 
 // Modals
@@ -450,9 +450,9 @@
 @modal-title-padding:         15px;
 @modal-title-line-height:     @line-height-base;
 
-@modal-content-bg:                             @body-bg; /* OLD: #fff; */
-@modal-content-border-color:                   @theme-borderColor; /* OLD: rgba(0,0,0,.2); */
-@modal-content-fallback-border-color:          @theme-borderColor; /* OLD: #999; */
+@modal-content-bg:                             @body-bg; // OLD: #fff;
+@modal-content-border-color:                   @theme-borderColor; // OLD: rgba(0,0,0,.2);
+@modal-content-fallback-border-color:          @theme-borderColor; // OLD: #999;
 
 @modal-backdrop-bg:           #000;
 @modal-header-border-color:   #e5e5e5;
@@ -484,8 +484,8 @@
 
 // Progress bars
 // -------------------------
-@progress-bg:                 @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
-@progress-bar-color:          @body-bg; /* OLD: #fff; */
+@progress-bg:                 @theme-backgroundSecondaryColor; // OLD: #f5f5f5;
+@progress-bar-color:          @body-bg; // OLD: #fff;
 
 @progress-bar-bg:             @brand-primary;
 @progress-bar-success-bg:     @brand-success;
@@ -496,31 +496,31 @@
 
 // List group
 // -------------------------
-@list-group-bg:               @body-bg; /* OLD: #fff; */
-@list-group-border:           @theme-borderColor; /* OLD: #ddd; */
+@list-group-bg:               @body-bg; // OLD: #fff;
+@list-group-border:           @theme-borderColor; // OLD: #ddd;
 @list-group-border-radius:    @border-radius-base;
 
-@list-group-hover-bg:         @theme-highlightColor; /* OLD: #f5f5f5; */
-@list-group-active-color:     @component-active-color; /* OLD: #fff; */
+@list-group-hover-bg:         @theme-highlightColor; // OLD: #f5f5f5;
+@list-group-active-color:     @component-active-color; // OLD: #fff;
 @list-group-active-bg:        @component-active-bg;
 @list-group-active-border:    @list-group-active-bg;
 
-@list-group-link-color:          @theme-textColor; /* OLD: #555; */
-@list-group-link-heading-color:  @theme-titleColor; /* OLD: #333; */
+@list-group-link-color:          @theme-textColor; // OLD: #555;
+@list-group-link-heading-color:  @theme-titleColor; // OLD: #333;
 
 
 // Panels
 // -------------------------
-@panel-bg:                    @body-bg; /* OLD: #fff; */
-@panel-inner-border:          @theme-borderColor; /* OLD: #ddd; */
+@panel-bg:                    @body-bg; // OLD: #fff;
+@panel-inner-border:          @theme-borderColor; // OLD: #ddd;
 @panel-border-radius:         @border-radius-base;
-@panel-footer-bg:             @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
+@panel-footer-bg:             @theme-backgroundSecondaryColor; // OLD: #f5f5f5;
 
-@panel-default-text:          @theme-textColor; /* OLD: @gray-dark; */
-@panel-default-border:        @theme-borderColor; /* OLD: #ddd; */
-@panel-default-heading-bg:    @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
+@panel-default-text:          @theme-textColor; // OLD: @gray-dark;
+@panel-default-border:        @theme-borderColor; // OLD: #ddd;
+@panel-default-heading-bg:    @theme-backgroundSecondaryColor; // OLD: #f5f5f5;
 
-@panel-primary-text:          @theme-buttonPrimaryTextColor; /* OLD: #fff; */
+@panel-primary-text:          @theme-buttonPrimaryTextColor; // OLD: #fff;
 @panel-primary-border:        lighten(@brand-primary, 30%);
 @panel-primary-heading-bg:    lighten(@brand-primary, 30%);
 
@@ -545,7 +545,7 @@
 // -------------------------
 @thumbnail-padding:           4px;
 @thumbnail-bg:                @body-bg;
-@thumbnail-border:            @theme-borderColor; /* OLD: #ddd; */
+@thumbnail-border:            @theme-borderColor; // OLD: #ddd;
 @thumbnail-border-radius:     @border-radius-base;
 
 @thumbnail-caption-color:     @text-color;
@@ -554,17 +554,17 @@
 
 // Wells
 // -------------------------
-@well-bg:                     @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
+@well-bg:                     @theme-backgroundSecondaryColor; // OLD: #f5f5f5;
 
 
 // Badges
 // -------------------------
-@badge-color:                 @theme-textSecondaryColor; /* OLD: #fff; */
-@badge-link-hover-color:      @theme-textSecondaryColor; /* OLD: #fff; */
-@badge-bg:                    @theme-backgroundSecondaryColor; /* OLD: @gray-light; */
+@badge-color:                 @theme-textSecondaryColor; // OLD: #fff;
+@badge-link-hover-color:      @theme-textSecondaryColor; // OLD: #fff;
+@badge-bg:                    @theme-backgroundSecondaryColor; // OLD: @gray-light;
 
 @badge-active-color:          @link-color;
-@badge-active-bg:             @body-bg; /* OLD: #fff; */
+@badge-active-bg:             @body-bg; // OLD: #fff;
 
 @badge-font-weight:           bold;
 @badge-line-height:           1;
@@ -573,9 +573,9 @@
 
 // Breadcrumbs
 // -------------------------
-@breadcrumb-bg:               @body-bg; /* OLD: #f5f5f5; */
-@breadcrumb-color:            @theme-textSecondaryColor; /* OLD: @gray-light; */
-@breadcrumb-active-color:     @theme-textColor; /* OLD: #ccc; */
+@breadcrumb-bg:               @body-bg; // OLD: #f5f5f5;
+@breadcrumb-color:            @theme-textSecondaryColor; // OLD: @gray-light;
+@breadcrumb-active-color:     @theme-textColor; // OLD: #ccc;
 
 
 // Carousel
@@ -606,25 +606,25 @@
 @code-color:                  #c7254e;
 @code-bg:                     #f9f2f4;
 
-@pre-bg:                      @theme-backgroundSecondaryColor; /* OLD: #f5f5f5; */
-@pre-color:                   @theme-textColor; /* OLD: @gray-dark; */
-@pre-border-color:            @theme-borderColor; /* OLD: #ccc; */
+@pre-bg:                      @theme-backgroundSecondaryColor; // OLD: #f5f5f5;
+@pre-color:                   @theme-textColor; // OLD: @gray-dark;
+@pre-border-color:            @theme-borderColor; // OLD: #ccc;
 @pre-scrollable-max-height:   340px;
 
 // Type
 // ------------------------
-@text-muted:                  @theme-textSecondaryColor; /* OLD: @gray-light; */
-@abbr-border-color:           @theme-borderColor; /* OLD: @gray-light; */
-@headings-small-color:        @theme-textSecondaryColor; /* OLD: @gray-light; */
-@blockquote-small-color:      @theme-textSecondaryColor; /* OLD: @gray-light; */
-@blockquote-border-color:     @theme-borderColor; /* OLD: @gray-lighter; */
-@page-header-border-color:    none; /* OLD: @gray-lighter; */
+@text-muted:                  @theme-textSecondaryColor; // OLD: @gray-light;
+@abbr-border-color:           @theme-borderColor; // OLD: @gray-light;
+@headings-small-color:        @theme-textSecondaryColor; // OLD: @gray-light;
+@blockquote-small-color:      @theme-textSecondaryColor; // OLD: @gray-light;
+@blockquote-border-color:     @theme-borderColor; // OLD: @gray-lighter;
+@page-header-border-color:    none; // OLD: @gray-lighter;
 
 // Miscellaneous
 // -------------------------
 
 // Hr border color
-@hr-border:                   @theme-borderColor; /* OLD: @gray-lighter; */
+@hr-border:                   @theme-borderColor; // OLD: @gray-lighter;
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
