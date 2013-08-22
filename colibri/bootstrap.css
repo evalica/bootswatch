@@ -7443,3 +7443,75 @@ h6 {
 .affix {
   position: fixed;
 }
+
+.clearfloats:before,
+.clearfloats:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloats:after {
+  clear: both;
+}
+
+.clearfloats:before,
+.clearfloats:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloats:after {
+  clear: both;
+}
+
+.clearfloats:before,
+.clearfloats:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloats:after {
+  clear: both;
+}
+
+.clearfloats:before,
+.clearfloats:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloats:after {
+  clear: both;
+}
+
+.clearfloats:before,
+.clearfloats:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloats:after {
+  clear: both;
+}
+
+:-moz-placeholder {
+  color: #9f9f9f;
+}
+
+::-moz-placeholder {
+  color: #9f9f9f;
+}
+
+:-ms-input-placeholder {
+  color: #9f9f9f;
+}
+
+::-webkit-input-placeholder {
+  color: #9f9f9f;
+}
+
+/* For browsers that don't support the placeholder attribute. */
+
+input[type="text"].empty {
+  color: #9f9f9f !important;
+}
