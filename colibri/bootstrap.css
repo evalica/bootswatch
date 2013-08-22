@@ -7560,6 +7560,42 @@ td.visible-print {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb7070', endColorstr='#ffbc2f2f', GradientType=0);
 }
 
+/* Font size for Hn is 1.1^(7-n) */
+
+h1 {
+  font-size: 2.15em;
+}
+
+h1,
+.h1 {
+  font-size: 24.78px;
+}
+
+h2,
+.h2 {
+  font-size: 22.540000000000003px;
+}
+
+h3,
+.h3 {
+  font-size: 20.439999999999998px;
+}
+
+h4,
+.h4 {
+  font-size: 18.62px;
+}
+
+h5,
+.h5 {
+  font-size: 16.939999999999998px;
+}
+
+h6,
+.h6 {
+  font-size: 15.400000000000002px;
+}
+
 h1,
 h2,
 h3,
