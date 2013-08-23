@@ -6011,7 +6011,9 @@ h6 {
   background-color: #f3f3f3;
 }
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.clearfloats:before,
+.clearfloats:after {
   content: " ";
   /* 1 */
 
@@ -6019,7 +6021,8 @@ h6 {
   /* 2 */
 
 }
-.clearfix:after {
+.clearfix:after,
+.clearfloats:after {
   clear: both;
 }
 .pull-right {
@@ -6046,30 +6049,6 @@ h6 {
 }
 .affix {
   position: fixed;
-}
-.clearfloats:before,
-.clearfloats:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.clearfloats:after {
-  clear: both;
-}
-.clearfloats:before,
-.clearfloats:after {
-  content: " ";
-  /* 1 */
-
-  display: table;
-  /* 2 */
-
-}
-.clearfloats:after {
-  clear: both;
 }
 :-moz-placeholder {
   color: #9f9f9f;
