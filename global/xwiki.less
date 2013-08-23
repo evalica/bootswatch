@@ -42,10 +42,29 @@ input[type="text"].empty {
   color: @theme-textSecondaryColor !important;
 }
 
-
 // Typography =================================================================
 
+.text-uppercase {
+  font-size: floor(@font-size-base * 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 // Buttons ====================================================================
+
+input.button, .buttonwrapper button, .buttonwrapper a {
+  .btn;
+  .btn-primary;
+  .text-uppercase;
+}
+
+.buttonwrapper input.secondary, .buttonwrapper button.secondary, .buttonwrapper a.secondary {
+  .btn-default;
+}
+
+.buttonwrapper a {
+  display: inline; // Making buttons and links look the same
+}
 
 // Tables =====================================================================
 
