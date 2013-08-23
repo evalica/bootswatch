@@ -18,6 +18,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-less": "~0.7.0",
     "bower": "~1.0.0"
   }
 }

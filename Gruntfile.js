@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-recess');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -40,6 +41,18 @@ module.exports = function (grunt) {
 				},
 				files: {}
 			}
+		},
+		less: {
+		  development: {
+		    options: {},
+		    files: {}
+		  },
+		  production: {
+		    options: {
+		      yuicompress: true
+		    },
+		    files: {}
+		  }
 		}
 	});
 
@@ -69,6 +82,31 @@ module.exports = function (grunt) {
 			compress ? 'compress:'+recessDest+':'+'<%=builddir%>/' + theme + '/bootstrap.min.css':'none']);
 	});
 
+	grunt.registerTask('build-less', 'build a regular theme', function(theme, compress) {
+		var compress = compress == undefined ? true : compress;
+
+		var concatSrc;
+		var concatDest;
+		var recessDest;
+		var recessSrc;
+		var files = {};
+		var dist = {};
+		concatSrc = 'global/build.less';
+		concatDest = theme + '/build.less';
+		recessDest = '<%=builddir%>/' + theme + '/bootstrap.css';
+		recessSrc = [ theme + '/' + 'build.less' ];
+
+		dist = {src: concatSrc, dest: concatDest};
+		grunt.config('concat.dist', dist);
+		files = {}; files[recessDest] = recessSrc;
+		grunt.config('less.development.files', files);
+
+		grunt.task.run(['concat', 
+			'less:development', 
+			'clean:build',
+			compress ? 'compress-less:'+recessDest+':'+'<%=builddir%>/' + theme + '/bootstrap.min.css':'none']);
+	});
+
 	grunt.registerTask('compress', 'compress a generic css', function(fileSrc, fileDst) {
 		var files = {}; files[fileDst] = fileSrc;
 		grunt.log.writeln('compressing file ' + fileSrc);
@@ -76,11 +114,21 @@ module.exports = function (grunt) {
 		grunt.config('recess.dist.files', files);
 		grunt.config('recess.dist.options.compress', true);
 		grunt.task.run(['recess:dist']);
+
+	});
+
+	grunt.registerTask('compress-less', 'compress a generic css', function(fileSrc, fileDst) {
+		var files = {}; files[fileDst] = fileSrc;
+		grunt.log.writeln('compressing file ' + fileSrc);
+
+		grunt.config('less.production.files', files);
+		grunt.task.run(['less:production']);
 	});
 
 	grunt.registerMultiTask('swatch', 'build a theme', function() {
 		var t = this.target;
-		grunt.task.run('build:'+t);
+		//grunt.task.run('build:'+t);
+		grunt.task.run('build-less:'+t);
 	});
 	
 	grunt.registerTask('default', 'build a theme', function() {
