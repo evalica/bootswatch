@@ -5867,6 +5867,275 @@ td.visible-print {
     display: none !important;
   }
 }
+:-moz-placeholder {
+  color: #9f9f9f;
+}
+::-moz-placeholder {
+  color: #9f9f9f;
+}
+:-ms-input-placeholder {
+  color: #9f9f9f;
+}
+::-webkit-input-placeholder {
+  color: #9f9f9f;
+}
+/* For browsers that don't support the placeholder attribute. */
+input[type="text"].empty {
+  color: #9f9f9f !important;
+}
+input.button,
+.buttonwrapper button,
+.buttonwrapper a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #2173af;
+  border-color: #2173af;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#419adb), color-stop(50%, #2173af), to(#1e689e));
+  background-image: -webkit-linear-gradient(#419adb, #2173af 50%, #1e689e);
+  background-image: -moz-linear-gradient(top, #419adb, #2173af 50%, #1e689e);
+  background-image: linear-gradient(#419adb, #2173af 50%, #1e689e);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff419adb', endColorstr='#ff1e689e', GradientType=0);
+  border: 1px solid #195784;
+}
+input.button:focus,
+.buttonwrapper button:focus,
+.buttonwrapper a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+input.button:hover,
+.buttonwrapper button:hover,
+.buttonwrapper a:hover,
+input.button:focus,
+.buttonwrapper button:focus,
+.buttonwrapper a:focus {
+  color: #4d5860;
+  text-decoration: none;
+}
+input.button:active,
+.buttonwrapper button:active,
+.buttonwrapper a:active,
+input.button.active,
+.buttonwrapper button.active,
+.buttonwrapper a.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+input.button.disabled,
+.buttonwrapper button.disabled,
+.buttonwrapper a.disabled,
+input.button[disabled],
+.buttonwrapper button[disabled],
+.buttonwrapper a[disabled],
+fieldset[disabled] input.button,
+fieldset[disabled] .buttonwrapper button,
+fieldset[disabled] .buttonwrapper a {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input.button:hover,
+.buttonwrapper button:hover,
+.buttonwrapper a:hover,
+input.button:focus,
+.buttonwrapper button:focus,
+.buttonwrapper a:focus,
+input.button:active,
+.buttonwrapper button:active,
+.buttonwrapper a:active,
+input.button.active,
+.buttonwrapper button.active,
+.buttonwrapper a.active,
+.open .dropdown-toggleinput.button,
+.open .dropdown-toggle.buttonwrapper button,
+.open .dropdown-toggle.buttonwrapper a {
+  color: #ffffff;
+  background-color: #1b5c8d;
+  border-color: #17517c;
+}
+input.button:active,
+.buttonwrapper button:active,
+.buttonwrapper a:active,
+input.button.active,
+.buttonwrapper button.active,
+.buttonwrapper a.active,
+.open .dropdown-toggleinput.button,
+.open .dropdown-toggle.buttonwrapper button,
+.open .dropdown-toggle.buttonwrapper a {
+  background-image: none;
+}
+input.button.disabled,
+.buttonwrapper button.disabled,
+.buttonwrapper a.disabled,
+input.button[disabled],
+.buttonwrapper button[disabled],
+.buttonwrapper a[disabled],
+fieldset[disabled] input.button,
+fieldset[disabled] .buttonwrapper button,
+fieldset[disabled] .buttonwrapper a,
+input.button.disabled:hover,
+.buttonwrapper button.disabled:hover,
+.buttonwrapper a.disabled:hover,
+input.button[disabled]:hover,
+.buttonwrapper button[disabled]:hover,
+.buttonwrapper a[disabled]:hover,
+fieldset[disabled] input.button:hover,
+fieldset[disabled] .buttonwrapper button:hover,
+fieldset[disabled] .buttonwrapper a:hover,
+input.button.disabled:focus,
+.buttonwrapper button.disabled:focus,
+.buttonwrapper a.disabled:focus,
+input.button[disabled]:focus,
+.buttonwrapper button[disabled]:focus,
+.buttonwrapper a[disabled]:focus,
+fieldset[disabled] input.button:focus,
+fieldset[disabled] .buttonwrapper button:focus,
+fieldset[disabled] .buttonwrapper a:focus,
+input.button.disabled:active,
+.buttonwrapper button.disabled:active,
+.buttonwrapper a.disabled:active,
+input.button[disabled]:active,
+.buttonwrapper button[disabled]:active,
+.buttonwrapper a[disabled]:active,
+fieldset[disabled] input.button:active,
+fieldset[disabled] .buttonwrapper button:active,
+fieldset[disabled] .buttonwrapper a:active,
+input.button.disabled.active,
+.buttonwrapper button.disabled.active,
+.buttonwrapper a.disabled.active,
+input.button[disabled].active,
+.buttonwrapper button[disabled].active,
+.buttonwrapper a[disabled].active,
+fieldset[disabled] input.button.active,
+fieldset[disabled] .buttonwrapper button.active,
+fieldset[disabled] .buttonwrapper a.active {
+  background-color: #2173af;
+  border-color: #2173af;
+}
+.buttonwrapper input.secondary,
+.buttonwrapper button.secondary,
+.buttonwrapper a.secondary {
+  color: #4d5860;
+  background-color: #e1e1e1;
+  border-color: #e1e1e1;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(50%, #e1e1e1), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(#ffffff, #e1e1e1 50%, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1 50%, #d7d7d7);
+  background-image: linear-gradient(#ffffff, #e1e1e1 50%, #d7d7d7);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffd7d7d7', GradientType=0);
+  border: 1px solid #c8c8c8;
+}
+.buttonwrapper input.secondary:hover,
+.buttonwrapper button.secondary:hover,
+.buttonwrapper a.secondary:hover,
+.buttonwrapper input.secondary:focus,
+.buttonwrapper button.secondary:focus,
+.buttonwrapper a.secondary:focus,
+.buttonwrapper input.secondary:active,
+.buttonwrapper button.secondary:active,
+.buttonwrapper a.secondary:active,
+.buttonwrapper input.secondary.active,
+.buttonwrapper button.secondary.active,
+.buttonwrapper a.secondary.active,
+.open .dropdown-toggle.buttonwrapper input.secondary,
+.open .dropdown-toggle.buttonwrapper button.secondary,
+.open .dropdown-toggle.buttonwrapper a.secondary {
+  color: #4d5860;
+  background-color: #cdcdcd;
+  border-color: #c2c2c2;
+}
+.buttonwrapper input.secondary:active,
+.buttonwrapper button.secondary:active,
+.buttonwrapper a.secondary:active,
+.buttonwrapper input.secondary.active,
+.buttonwrapper button.secondary.active,
+.buttonwrapper a.secondary.active,
+.open .dropdown-toggle.buttonwrapper input.secondary,
+.open .dropdown-toggle.buttonwrapper button.secondary,
+.open .dropdown-toggle.buttonwrapper a.secondary {
+  background-image: none;
+}
+.buttonwrapper input.secondary.disabled,
+.buttonwrapper button.secondary.disabled,
+.buttonwrapper a.secondary.disabled,
+.buttonwrapper input.secondary[disabled],
+.buttonwrapper button.secondary[disabled],
+.buttonwrapper a.secondary[disabled],
+fieldset[disabled] .buttonwrapper input.secondary,
+fieldset[disabled] .buttonwrapper button.secondary,
+fieldset[disabled] .buttonwrapper a.secondary,
+.buttonwrapper input.secondary.disabled:hover,
+.buttonwrapper button.secondary.disabled:hover,
+.buttonwrapper a.secondary.disabled:hover,
+.buttonwrapper input.secondary[disabled]:hover,
+.buttonwrapper button.secondary[disabled]:hover,
+.buttonwrapper a.secondary[disabled]:hover,
+fieldset[disabled] .buttonwrapper input.secondary:hover,
+fieldset[disabled] .buttonwrapper button.secondary:hover,
+fieldset[disabled] .buttonwrapper a.secondary:hover,
+.buttonwrapper input.secondary.disabled:focus,
+.buttonwrapper button.secondary.disabled:focus,
+.buttonwrapper a.secondary.disabled:focus,
+.buttonwrapper input.secondary[disabled]:focus,
+.buttonwrapper button.secondary[disabled]:focus,
+.buttonwrapper a.secondary[disabled]:focus,
+fieldset[disabled] .buttonwrapper input.secondary:focus,
+fieldset[disabled] .buttonwrapper button.secondary:focus,
+fieldset[disabled] .buttonwrapper a.secondary:focus,
+.buttonwrapper input.secondary.disabled:active,
+.buttonwrapper button.secondary.disabled:active,
+.buttonwrapper a.secondary.disabled:active,
+.buttonwrapper input.secondary[disabled]:active,
+.buttonwrapper button.secondary[disabled]:active,
+.buttonwrapper a.secondary[disabled]:active,
+fieldset[disabled] .buttonwrapper input.secondary:active,
+fieldset[disabled] .buttonwrapper button.secondary:active,
+fieldset[disabled] .buttonwrapper a.secondary:active,
+.buttonwrapper input.secondary.disabled.active,
+.buttonwrapper button.secondary.disabled.active,
+.buttonwrapper a.secondary.disabled.active,
+.buttonwrapper input.secondary[disabled].active,
+.buttonwrapper button.secondary[disabled].active,
+.buttonwrapper a.secondary[disabled].active,
+fieldset[disabled] .buttonwrapper input.secondary.active,
+fieldset[disabled] .buttonwrapper button.secondary.active,
+fieldset[disabled] .buttonwrapper a.secondary.active {
+  background-color: #e1e1e1;
+  border-color: #e1e1e1;
+}
+.buttonwrapper a {
+  display: inline;
+}
+.text-uppercase {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .navbar {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(50%, #e1e1e1), to(#d7d7d7));
   background-image: -webkit-linear-gradient(#ffffff, #e1e1e1 50%, #d7d7d7);
@@ -5970,6 +6239,13 @@ td.visible-print {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb7070', endColorstr='#ffbc2f2f', GradientType=0);
   border: 1px solid #a32929;
 }
+input.button,
+.buttonwrapper button,
+.buttonwrapper a {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 /* Font size for Hn is 1.1^(7-n) */
 h1 {
   font-size: 2.15em;
@@ -6049,20 +6325,4 @@ h6 {
 }
 .affix {
   position: fixed;
-}
-:-moz-placeholder {
-  color: #9f9f9f;
-}
-::-moz-placeholder {
-  color: #9f9f9f;
-}
-:-ms-input-placeholder {
-  color: #9f9f9f;
-}
-::-webkit-input-placeholder {
-  color: #9f9f9f;
-}
-/* For browsers that don't support the placeholder attribute. */
-input[type="text"].empty {
-  color: #9f9f9f !important;
 }
