@@ -7,6 +7,12 @@
   border: 1px solid darken(@color, 10%);
 }
 
+.text-uppercase {
+  font-size: floor(@font-size-base * 0.8);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 // Navbar =====================================================================
 
 .navbar {
@@ -75,6 +81,10 @@
 .btn-danger,
 .btn-danger:hover {
   .btn-shadow(@btn-danger-bg);
+}
+
+input.button, .buttonwrapper button, .buttonwrapper a {
+  .text-uppercase;
 }
 
 // Typography =================================================================
