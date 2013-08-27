@@ -5867,22 +5867,6 @@ td.visible-print {
     display: none !important;
   }
 }
-:-moz-placeholder {
-  color: #9f9f9f;
-}
-::-moz-placeholder {
-  color: #9f9f9f;
-}
-:-ms-input-placeholder {
-  color: #9f9f9f;
-}
-::-webkit-input-placeholder {
-  color: #9f9f9f;
-}
-/* For browsers that don't support the placeholder attribute. */
-input[type="text"].empty {
-  color: #9f9f9f !important;
-}
 input.button,
 .buttonwrapper button,
 .buttonwrapper a {
@@ -5904,6 +5888,9 @@ input.button,
   -o-user-select: none;
   user-select: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #2173af;
   border-color: #2173af;
@@ -6131,6 +6118,22 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
 .buttonwrapper a {
   display: inline;
 }
+:-moz-placeholder {
+  color: #9f9f9f;
+}
+::-moz-placeholder {
+  color: #9f9f9f;
+}
+:-ms-input-placeholder {
+  color: #9f9f9f;
+}
+::-webkit-input-placeholder {
+  color: #9f9f9f;
+}
+/* For browsers that don't support the placeholder attribute. */
+input[type="text"].empty {
+  color: #9f9f9f;
+}
 .text-uppercase {
   font-size: 11px;
   font-weight: 700;
@@ -6178,6 +6181,9 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
 }
 .btn {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .btn-default,
 .btn-default:hover {
@@ -6238,13 +6244,6 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdb7070', endColorstr='#ffbc2f2f', GradientType=0);
   border: 1px solid #a32929;
-}
-input.button,
-.buttonwrapper button,
-.buttonwrapper a {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 /* Font size for Hn is 1.1^(7-n) */
 h1 {
