@@ -36,6 +36,19 @@
 
 .clearfloats:extend(.clearfix all) {}
 
+.centered {
+  .text-center;
+}
+
+.separator, .itemCount {
+  .text-muted;
+}
+
+.noitems {
+  .text-muted;
+  font-size: floor(@font-size-base * 0.9);
+}
+
 // Typography =================================================================
 
 // Buttons ====================================================================
@@ -57,11 +70,11 @@ input.button, .buttonwrapper button, .buttonwrapper a {
 
 // Forms ======================================================================
 
-.placeholder(@color: @theme-textSecondaryColor);
+.placeholder(@color: @text-muted);
 
 /* For browsers that don't support the placeholder attribute. */
 input[type="text"].empty {
-  color: @theme-textSecondaryColor;
+  .text-muted;
 }
 
 // Containers =================================================================
