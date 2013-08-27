@@ -100,6 +100,41 @@ input[type="text"].empty {
   .text-muted;
 }
 
+.xform {
+
+  input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+  }
+
+  dl {
+    dt {
+      margin-top: floor(@font-size-base * 1.4);
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .xHint, .xRequired {
+    .text-muted;
+    font-size: floor(@font-size-base * 0.9);
+    font-weight: 400;
+  }
+
+  .xHint {
+    display: block;
+  }
+
+  .xErrorMsg {
+    color: @state-danger-text;
+  }
+
+  .xErrorField {
+    border-color: @state-danger-bg;
+  }
+}
+
+
 // Grid =======================================================================
 
 .column {
