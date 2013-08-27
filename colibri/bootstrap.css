@@ -6265,6 +6265,53 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
 .buttonwrapper a {
   display: inline;
 }
+textarea,
+select,
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  width: auto;
+}
+select.input-sm,
+input[type="text"].input-sm,
+input[type="password"].input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+selectselect.input-sm,
+selectinput[type="text"].input-sm,
+selectinput[type="password"].input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+textareaselect.input-sm,
+textareainput[type="text"].input-sm,
+textareainput[type="password"].input-sm {
+  height: auto;
+}
+select.input-lg,
+input[type="text"].input-lg,
+input[type="password"].input-lg {
+  height: 45px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+selectselect.input-lg,
+selectinput[type="text"].input-lg,
+selectinput[type="password"].input-lg {
+  height: 45px;
+  line-height: 45px;
+}
+textareaselect.input-lg,
+textareainput[type="text"].input-lg,
+textareainput[type="password"].input-lg {
+  height: auto;
+}
 textarea {
   height: auto;
   max-width: 100%;
@@ -6286,6 +6333,33 @@ textarea {
 /* For browsers that don't support the placeholder attribute. */
 input[type="text"].empty {
   color: #9f9f9f;
+}
+.xform input[type="text"],
+.xform input[type="password"],
+.xform select,
+.xform textarea {
+  width: 100%;
+}
+.xform dl dt {
+  margin-top: 19px;
+}
+.xform dl dt:first-of-type {
+  margin-top: 0;
+}
+.xform .xHint,
+.xform .xRequired {
+  color: #9f9f9f;
+  font-size: 12px;
+  font-weight: 400;
+}
+.xform .xHint {
+  display: block;
+}
+.xform .xErrorMsg {
+  color: #cc3333;
+}
+.xform .xErrorField {
+  border-color: #f5d6d6;
 }
 .column {
   float: left !important;
@@ -6445,6 +6519,14 @@ h6 {
 }
 .table th {
   background-color: #f3f3f3;
+}
+form label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+form label span {
+  text-transform: none;
 }
 .clearfix:before,
 .clearfix:after,
