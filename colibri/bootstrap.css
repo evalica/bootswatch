@@ -5867,6 +5867,17 @@ td.visible-print {
     display: none !important;
   }
 }
+.centered {
+  text-align: center;
+}
+.separator,
+.itemCount {
+  color: #9f9f9f;
+}
+.noitems {
+  color: #9f9f9f;
+  font-size: 12px;
+}
 input.button,
 .buttonwrapper button,
 .buttonwrapper a {
