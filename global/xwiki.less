@@ -36,13 +36,6 @@
 
 .clearfloats:extend(.clearfix all) {}
 
-.placeholder(@color: @theme-textSecondaryColor);
-
-/* For browsers that don't support the placeholder attribute. */
-input[type="text"].empty {
-  color: @theme-textSecondaryColor !important;
-}
-
 // Typography =================================================================
 
 // Buttons ====================================================================
@@ -63,5 +56,12 @@ input.button, .buttonwrapper button, .buttonwrapper a {
 // Tables =====================================================================
 
 // Forms ======================================================================
+
+.placeholder(@color: @theme-textSecondaryColor);
+
+/* For browsers that don't support the placeholder attribute. */
+input[type="text"].empty {
+  color: @theme-textSecondaryColor;
+}
 
 // Containers =================================================================
