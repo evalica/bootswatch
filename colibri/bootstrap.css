@@ -746,7 +746,10 @@ pre code {
 .col-lg-9,
 .col-lg-10,
 .col-lg-11,
-.col-lg-12 {
+.col-lg-12,
+.full,
+.half,
+.third {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1130,7 +1133,9 @@ pre code {
   .col-lg-8,
   .col-lg-9,
   .col-lg-10,
-  .col-lg-11 {
+  .col-lg-11,
+  .half,
+  .third {
     float: left;
   }
   .col-lg-1 {
@@ -1142,13 +1147,15 @@ pre code {
   .col-lg-3 {
     width: 25%;
   }
-  .col-lg-4 {
+  .col-lg-4,
+  .third {
     width: 33.33333333333333%;
   }
   .col-lg-5 {
     width: 41.66666666666667%;
   }
-  .col-lg-6 {
+  .col-lg-6,
+  .half {
     width: 50%;
   }
   .col-lg-7 {
@@ -1166,7 +1173,8 @@ pre code {
   .col-lg-11 {
     width: 91.66666666666666%;
   }
-  .col-lg-12 {
+  .col-lg-12,
+  .full {
     width: 100%;
   }
   .col-lg-push-0 {
@@ -6144,6 +6152,14 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
 /* For browsers that don't support the placeholder attribute. */
 input[type="text"].empty {
   color: #9f9f9f;
+}
+.column {
+  float: left !important;
+}
+.full,
+.half,
+.third {
+  padding: 0;
 }
 .text-uppercase {
   font-size: 11px;
