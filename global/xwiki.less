@@ -72,6 +72,16 @@ input.button, .buttonwrapper button, .buttonwrapper a {
 
 textarea, select, input[type="text"], input[type="password"] {
   &:extend(.form-control all);
+  display: inline-block;
+  width: auto;
+}
+
+select.input-sm, input[type="text"].input-sm, input[type="password"].input-sm {
+  .input-sm;
+}
+
+select.input-lg, input[type="text"].input-lg, input[type="password"].input-lg {
+  .input-lg;
 }
 
 input[type="radio"]:extend(.radio-inline all) {}
