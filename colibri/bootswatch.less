@@ -3,6 +3,8 @@
 // Bootswatch: styles specific only to this theme that come on top of the default Bootstrap styles and XWiki mapping
 // -----------------------------------------------------
 
+// Mixins =====================================================================
+
 .btn-shadow(@color) {
   #gradient > .vertical-three-colors(lighten(@color, 15%), @color, 50%, darken(@color, 4%));
   border: 1px solid darken(@color, 10%);
@@ -52,6 +54,7 @@
 
 .btn {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  .text-uppercase;
 }
 
 .btn-default,
@@ -82,10 +85,6 @@
 .btn-danger,
 .btn-danger:hover {
   .btn-shadow(@btn-danger-bg);
-}
-
-input.button, .buttonwrapper button, .buttonwrapper a {
-  .text-uppercase;
 }
 
 // Typography =================================================================
