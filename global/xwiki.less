@@ -70,6 +70,19 @@ input.button, .buttonwrapper button, .buttonwrapper a {
 
 // Forms ======================================================================
 
+textarea, select, input[type="text"], input[type="password"] {
+  &:extend(.form-control all);
+}
+
+input[type="radio"]:extend(.radio-inline all) {}
+
+input[type="checkbox"]:extend(.checkbox-inline all) {}
+
+textarea {
+  height: auto;
+  max-width: 100%; /* Prevent resizing beyond the visible area in modern browsers */
+}
+
 .placeholder(@color: @text-muted);
 
 /* For browsers that don't support the placeholder attribute. */
