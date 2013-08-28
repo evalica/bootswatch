@@ -228,7 +228,9 @@ table {
     display: none;
   }
   .table td,
-  .table th {
+  .table th,
+  table td,
+  table th {
     background-color: #fff !important;
   }
   .btn > .caret,
@@ -238,7 +240,8 @@ table {
   .label {
     border: 1px solid #000;
   }
-  .table {
+  .table,
+  table {
     border-collapse: collapse !important;
   }
   .table-bordered th,
@@ -1293,7 +1296,8 @@ table {
 th {
   text-align: left;
 }
-.table {
+.table,
+table {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1302,13 +1306,20 @@ th {
 .table tfoot > tr > th,
 .table thead > tr > td,
 .table tbody > tr > td,
-.table tfoot > tr > td {
+.table tfoot > tr > td,
+table thead > tr > th,
+table tbody > tr > th,
+table tfoot > tr > th,
+table thead > tr > td,
+table tbody > tr > td,
+table tfoot > tr > td {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #e8e8e8;
 }
-.table thead > tr > th {
+.table thead > tr > th,
+table thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #e8e8e8;
 }
@@ -1317,13 +1328,21 @@ th {
 .table thead:first-child tr:first-child th,
 .table caption + thead tr:first-child td,
 .table colgroup + thead tr:first-child td,
-.table thead:first-child tr:first-child td {
+.table thead:first-child tr:first-child td,
+table caption + thead tr:first-child th,
+table colgroup + thead tr:first-child th,
+table thead:first-child tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child td {
   border-top: 0;
 }
-.table tbody + tbody {
+.table tbody + tbody,
+table tbody + tbody {
   border-top: 2px solid #e8e8e8;
 }
-.table .table {
+.table .table,
+table table {
   background-color: #ffffff;
 }
 .table-condensed thead > tr > th,
@@ -1377,7 +1396,19 @@ table th[class*="col-"] {
 .table > tfoot > tr.active > td,
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
-.table > tfoot > tr.active > th {
+.table > tfoot > tr.active > th,
+table > thead > tr > td.active,
+table > tbody > tr > td.active,
+table > tfoot > tr > td.active,
+table > thead > tr > th.active,
+table > tbody > tr > th.active,
+table > tfoot > tr > th.active,
+table > thead > tr.active > td,
+table > tbody > tr.active > td,
+table > tfoot > tr.active > td,
+table > thead > tr.active > th,
+table > tbody > tr.active > th,
+table > tfoot > tr.active > th {
   background-color: #ffffdd;
 }
 .table > thead > tr > td.success,
@@ -1391,7 +1422,19 @@ table th[class*="col-"] {
 .table > tfoot > tr.success > td,
 .table > thead > tr.success > th,
 .table > tbody > tr.success > th,
-.table > tfoot > tr.success > th {
+.table > tfoot > tr.success > th,
+table > thead > tr > td.success,
+table > tbody > tr > td.success,
+table > tfoot > tr > td.success,
+table > thead > tr > th.success,
+table > tbody > tr > th.success,
+table > tfoot > tr > th.success,
+table > thead > tr.success > td,
+table > tbody > tr.success > td,
+table > tfoot > tr.success > td,
+table > thead > tr.success > th,
+table > tbody > tr.success > th,
+table > tfoot > tr.success > th {
   background-color: #cdffcd;
   border-color: #aaff9a;
 }
@@ -1412,7 +1455,19 @@ table th[class*="col-"] {
 .table > tfoot > tr.danger > td,
 .table > thead > tr.danger > th,
 .table > tbody > tr.danger > th,
-.table > tfoot > tr.danger > th {
+.table > tfoot > tr.danger > th,
+table > thead > tr > td.danger,
+table > tbody > tr > td.danger,
+table > tfoot > tr > td.danger,
+table > thead > tr > th.danger,
+table > tbody > tr > th.danger,
+table > tfoot > tr > th.danger,
+table > thead > tr.danger > td,
+table > tbody > tr.danger > td,
+table > tfoot > tr.danger > td,
+table > thead > tr.danger > th,
+table > tbody > tr.danger > th,
+table > tfoot > tr.danger > th {
   background-color: #f5d6d6;
   border-color: #f0c2c9;
 }
@@ -1433,7 +1488,19 @@ table th[class*="col-"] {
 .table > tfoot > tr.warning > td,
 .table > thead > tr.warning > th,
 .table > tbody > tr.warning > th,
-.table > tfoot > tr.warning > th {
+.table > tfoot > tr.warning > th,
+table > thead > tr > td.warning,
+table > tbody > tr > td.warning,
+table > tfoot > tr > td.warning,
+table > thead > tr > th.warning,
+table > tbody > tr > th.warning,
+table > tfoot > tr > th.warning,
+table > thead > tr.warning > td,
+table > tbody > tr.warning > td,
+table > tfoot > tr.warning > td,
+table > thead > tr.warning > th,
+table > tbody > tr.warning > th,
+table > tfoot > tr.warning > th {
   background-color: #fff5df;
   border-color: #ffe4c6;
 }
@@ -1451,7 +1518,8 @@ table th[class*="col-"] {
     overflow-x: scroll;
     border: 1px solid #e8e8e8;
   }
-  .table-responsive > .table {
+  .table-responsive > .table,
+  .table-responsive > table {
     margin-bottom: 0;
     background-color: #fff;
   }
@@ -1460,7 +1528,13 @@ table th[class*="col-"] {
   .table-responsive > .table > tfoot > tr > th,
   .table-responsive > .table > thead > tr > td,
   .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > td {
+  .table-responsive > .table > tfoot > tr > td,
+  .table-responsive > table > thead > tr > th,
+  .table-responsive > table > tbody > tr > th,
+  .table-responsive > table > tfoot > tr > th,
+  .table-responsive > table > thead > tr > td,
+  .table-responsive > table > tbody > tr > td,
+  .table-responsive > table > tfoot > tr > td {
     white-space: nowrap;
   }
   .table-responsive > .table-bordered {
@@ -4791,10 +4865,12 @@ a.list-group-item:focus {
 .panel-heading + .list-group .list-group-item:first-child {
   border-top-width: 0;
 }
-.panel > .table {
+.panel > .table,
+.panel > table {
   margin-bottom: 0;
 }
-.panel > .panel-body + .table {
+.panel > .panel-body + .table,
+.panel > .panel-body + table {
   border-top: 1px solid #e8e8e8;
 }
 .panel-heading {
@@ -6014,7 +6090,8 @@ td.visible-print {
   color: #9f9f9f;
   font-size: 12px;
 }
-.box {
+.box,
+.plainmessage {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -6024,9 +6101,13 @@ td.visible-print {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.box blockquote {
+.box blockquote,
+.plainmessage blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
+}
+.plainmessage {
+  background-repeat: no-repeat;
 }
 .successmessage {
   background-color: #cdffcd;
@@ -6433,6 +6514,12 @@ input[type="text"].empty {
 .third {
   padding: 0;
 }
+.full,
+.half,
+.third {
+  float: none;
+  padding-left: 0;
+}
 .text-uppercase {
   font-size: 11px;
   font-weight: 700;
@@ -6581,7 +6668,8 @@ h6 {
   border-bottom: 1px dotted #e8e8e8;
   color: #2173af;
 }
-.table th {
+.table th,
+table th {
   background-color: #f3f3f3;
 }
 form label {
