@@ -6090,6 +6090,16 @@ td.visible-print {
   color: #9f9f9f;
   font-size: 12px;
 }
+.successmessage,
+.errormessage,
+.warningmessage,
+.infomessage,
+span.successmessage,
+span.errormessage,
+span.warningmessage,
+span.infomessage {
+  padding: 2px;
+}
 .box,
 .plainmessage {
   min-height: 20px;
@@ -6153,11 +6163,8 @@ td.visible-print {
 .infomessage .alert-link {
   color: #264c73;
 }
-span.successmessage,
-span.errormessage,
-span.warningmessage,
-span.infomessage {
-  padding: 2px;
+.accordionTabTitleBar h1 {
+  font-size: 14px;
 }
 input.button,
 .buttonwrapper button,
@@ -6520,6 +6527,9 @@ input[type="text"].empty {
   float: none;
   padding-left: 0;
 }
+#footerglobal {
+  color: #9f9f9f;
+}
 .text-uppercase {
   font-size: 11px;
   font-weight: 700;
@@ -6567,9 +6577,6 @@ input[type="text"].empty {
 }
 .btn {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .btn-default,
 .btn-default:hover {
@@ -6672,10 +6679,20 @@ h6 {
 table th {
   background-color: #f3f3f3;
 }
-form label {
+.btn,
+form label,
+.alleditcontent label,
+.xwikitabbar li a,
+#historyform th,
+#informationcontent dt,
+#footerglobal,
+.accordionTabTitleBar h1 {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
+}
+#footerglobal {
+  font-weight: 400;
 }
 form label span {
   text-transform: none;
