@@ -54,7 +54,6 @@
 
 .btn {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-  .text-uppercase;
 }
 
 .btn-default,
@@ -116,14 +115,6 @@ h1, h2, h3, h4 , h5, h6 {
 
 // Forms ======================================================================
 
-form label {
-  .text-uppercase;
-}
-
-form label span {
-  text-transform: none;
-}
-
 // Navs =======================================================================
 
 // Indicators =================================================================
@@ -131,3 +122,26 @@ form label span {
 // Progress bars ==============================================================
 
 // Containers =================================================================
+
+// XWiki specific classes =====================================================
+
+.btn, 
+form label, // All form labels are uppercase, some labels (ex. SendMessage) are not
+.alleditcontent label, // Used for editor=wiki mode labels
+.xwikitabbar li a, // DocExtra Tabs
+#historyform th, // History Tab
+#informationcontent dt, // Information Tab
+#footerglobal, // Footer
+.accordionTabTitleBar h1 // Panel Wizard
+{ 
+  .text-uppercase;
+}
+
+#footerglobal {
+  font-weight: 400; // Fixing after uppercase
+}
+
+form label span {
+  text-transform: none; // Fixing after uppercase (ex. xRequired)
+}
+
