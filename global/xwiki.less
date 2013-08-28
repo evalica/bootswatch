@@ -49,8 +49,12 @@
   font-size: floor(@font-size-base * 0.9);
 }
 
-.box {
+.box, .plainmessage {
   .well;
+}
+
+.plainmessage {
+  background-repeat: no-repeat;
 }
 
 .successmessage {
@@ -169,6 +173,11 @@ input[type="text"].empty {
 .half:extend(.col-lg-6),
 .third:extend(.col-lg-4) {
   padding: 0;
+}
+
+.full, .half, .third {
+  float: none;
+  padding-left: 0;
 }
 
 // Containers =================================================================
