@@ -5,8 +5,12 @@
 
 // Mixins =====================================================================
 
-.btn-shadow(@color) {
+.gradient-effect(@color) {
   #gradient > .vertical-three-colors(lighten(@color, 15%), @color, 50%, darken(@color, 4%));
+}
+
+.btn-shadow(@color) {
+  .gradient-effect(@color);
   border: 1px solid darken(@color, 10%);
 }
 
@@ -123,7 +127,17 @@ h1, h2, h3, h4 , h5, h6 {
 
 // Containers =================================================================
 
-// XWiki specific classes =====================================================
+// Panels =====================================================================
+
+.panel-title {
+  border: none;
+}
+
+.xwikipaneltitle {
+  .gradient-effect(@theme-panelHeaderBackgroundColor);
+}
+
+// Uppercase Text =====================================================
 
 .btn, 
 form label, // All form labels are uppercase, some labels (ex. SendMessage) are not
@@ -132,7 +146,8 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 #historyform th, // History Tab
 #informationcontent dt, // Information Tab
 #footerglobal, // Footer
-.accordionTabTitleBar h1 // Panel Wizard
+.accordionTabTitleBar h1, // Panel Wizard
+.xwikipaneltitle // Panel Title
 { 
   .text-uppercase;
 }
@@ -144,4 +159,6 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 form label span {
   text-transform: none; // Fixing after uppercase (ex. xRequired)
 }
+
+
 
