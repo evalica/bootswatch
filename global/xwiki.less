@@ -27,6 +27,10 @@
 @theme-buttonSecondaryBackgroundColor: #E1E1E1; // VALUE: $theme.buttonSecondaryBackgroundColor;
 @theme-buttonSecondaryTextColor:       #4D5860; // VALUE: $theme.buttonSecondaryTextColor;
 
+@theme-panelHeaderBackgroundColor:     #E1E1E1; // VALUE: $theme.panelHeaderBackgroundColor;
+@theme-panelHeaderTextColor:           #4D5860; // VALUE: $theme.panelHeaderTextColor;
+@theme-panelBackgroundColor:           #FFFFFF; // VALUE: $theme.panelBackgroundColor;
+
 @theme-notificationInfoColor:          #336699; // VALUE: $theme.notificationInfoColor;
 @theme-notificationSuccessColor:       #008000; // VALUE: $theme.notificationSuccessColor;
 @theme-notificationWarningColor:       #D09000; // VALUE: $theme.notificationWarningColor;
@@ -48,6 +52,8 @@
   .text-muted;
   font-size: floor(@font-size-base * 0.9);
 }
+
+// Messages ===================================================================
 
 .successmessage, .errormessage, .warningmessage, .infomessage,
 span.successmessage, span.errormessage, span.warningmessage, span.infomessage {
@@ -169,7 +175,6 @@ input[type="text"].empty {
   }
 }
 
-
 // Grid =======================================================================
 
 .column {
@@ -186,6 +191,27 @@ input[type="text"].empty {
   float: none;
   padding-left: 0;
 }
+
+// Panels =====================================================================
+
+.panel {
+  .panel-default;
+}
+
+.xwikipaneltitle {
+  .panel-title;
+  .panel-heading;
+  .panel-default .panel-heading;
+  margin: 0;
+}
+
+.xwikipanelcontents {
+  padding: @alert-padding;
+}
+
+//.panel:extend(.panel-default all) {}
+
+//.xwikipaneltitle:extend(.panel-heading all) {}
 
 // Containers =================================================================
 
