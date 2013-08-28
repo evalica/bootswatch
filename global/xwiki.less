@@ -49,6 +49,11 @@
   font-size: floor(@font-size-base * 0.9);
 }
 
+.successmessage, .errormessage, .warningmessage, .infomessage,
+span.successmessage, span.errormessage, span.warningmessage, span.infomessage {
+  padding: floor(@font-size-base * 0.2);
+}
+
 .box, .plainmessage {
   .well;
 }
@@ -73,11 +78,11 @@
   .alert-info;
 }
 
-span.successmessage, span.errormessage, span.warningmessage, span.infomessage {
-  padding: floor(@font-size-base * 0.2);
-}
-
 // Typography =================================================================
+
+.accordionTabTitleBar h1 {
+  font-size: @font-size-base;
+}
 
 // Buttons ====================================================================
 
@@ -183,3 +188,7 @@ input[type="text"].empty {
 }
 
 // Containers =================================================================
+
+#footerglobal {
+  .text-muted;
+}
