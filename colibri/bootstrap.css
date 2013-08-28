@@ -4889,7 +4889,7 @@ a.list-group-item:focus {
 }
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f3f3f3;
+  background-color: #e1e1e1;
   border-top: 1px solid #e8e8e8;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -4918,8 +4918,8 @@ a.list-group-item:focus {
   border-color: #e8e8e8;
 }
 .panel-default > .panel-heading {
-  color: #636b75;
-  background-color: #f3f3f3;
+  color: #4d5860;
+  background-color: #e1e1e1;
   border-color: #e8e8e8;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
@@ -6527,6 +6527,43 @@ input[type="text"].empty {
   float: none;
   padding-left: 0;
 }
+.panel {
+  border-color: #e8e8e8;
+}
+.panel > .panel-heading {
+  color: #4d5860;
+  background-color: #e1e1e1;
+  border-color: #e8e8e8;
+}
+.panel > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #e8e8e8;
+}
+.panel > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #e8e8e8;
+}
+.xwikipaneltitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  border: none;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #4d5860;
+  background-color: #e1e1e1;
+  border-color: #e8e8e8;
+  margin: 0;
+}
+.xwikipaneltitle > a {
+  color: inherit;
+}
+.xwikipaneltitle + .panel-collapse .panel-body {
+  border-top-color: #e8e8e8;
+}
+.xwikipanelcontents {
+  padding: 15px;
+}
 #footerglobal {
   color: #9f9f9f;
 }
@@ -6679,6 +6716,17 @@ h6 {
 table th {
   background-color: #f3f3f3;
 }
+.panel-title {
+  border: none;
+}
+.xwikipaneltitle {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(50%, #e1e1e1), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(#ffffff, #e1e1e1 50%, #d7d7d7);
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1 50%, #d7d7d7);
+  background-image: linear-gradient(#ffffff, #e1e1e1 50%, #d7d7d7);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffd7d7d7', GradientType=0);
+}
 .btn,
 form label,
 .alleditcontent label,
@@ -6686,7 +6734,8 @@ form label,
 #historyform th,
 #informationcontent dt,
 #footerglobal,
-.accordionTabTitleBar h1 {
+.accordionTabTitleBar h1,
+.xwikipaneltitle {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
