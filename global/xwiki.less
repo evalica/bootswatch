@@ -210,7 +210,7 @@ input[type="text"].empty {
   border-color: @panel-default-border;
 }
 
-.xwikipaneltitle, .xwikitabbar {
+.xwikipaneltitle {
   .panel-title;
   .panel-heading;
   .panel-default .panel-heading;
@@ -221,13 +221,11 @@ input[type="text"].empty {
   padding: @alert-padding;
 }
 
-.xwikitabbar li a {
-  color: @panel-default-text;
-}
-
-.xwikitabbar li.active a {
-  color: @nav-tabs-active-link-hover-color;
-  background-color: @nav-tabs-active-link-hover-bg;
+.xwikitabbar {
+  .nav;
+  .nav-tabs;
+  padding-left: 2em; // Value from ul, ol
+  margin: 0;
 }
 
 // ActionMenus ================================================================  
@@ -283,20 +281,12 @@ input[type="text"].empty {
 
 #mainContentArea, #mainEditArea,
 #xdocFooter,
-#docextrapanes, ul.xwikitabbar {
+#docextrapanes {
   border: @border-width solid @theme-borderColor;
-}
-
-ul.xwikitabbar {
-  .border-top-width(@border-width);
 }
 
 #docextrapanes, #xdocFooter {
   .border-bottom-width(@border-width);
-}
-
-.xwikitabbar li.active a {
-  .border-top-radius(@border-radius-base);
 }
 
 #docextrapanes, #xdocFooter {
