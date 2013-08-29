@@ -24,7 +24,7 @@
   border-color: @border;
   & > .panel-heading {
     color: @heading-text-color;
-    .gradient-effect(@heading-bg-color);
+    .gradient-effect(@heading-bg-color); // Adding gradients
     border-color: @heading-border;
     + .panel-collapse .panel-body {
       border-top-color: @border;
@@ -147,7 +147,7 @@ h1, h2, h3, h4 , h5, h6 {
 // Panels =====================================================================
 
 .panel-title {
-  border: none;
+  border: none; // Fixing after headings border
 }
 
 .xwikipaneltitle {
