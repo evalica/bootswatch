@@ -144,6 +144,10 @@ h1, h2, h3, h4 , h5, h6 {
 
 // Containers =================================================================
 
+#body {
+  background-color: @theme-pageBackgroundColor;
+}
+
 // Panels =====================================================================
 
 .panel-title {
@@ -156,6 +160,7 @@ h1, h2, h3, h4 , h5, h6 {
 
 .xwikitabbar {
   border: 1px solid @panel-default-border;
+  .border-top-radius(@border-radius-base);
 }
 
 // Action Menus ===============================================================
@@ -169,6 +174,7 @@ h1, h2, h3, h4 , h5, h6 {
   .btn-shadow(@navbar-inverse-bg);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
+
 // Uppercase Text =============================================================
 
 .btn, 
