@@ -150,8 +150,12 @@ h1, h2, h3, h4 , h5, h6 {
   border: none; // Fixing after headings border
 }
 
-.xwikipaneltitle {
+.xwikipaneltitle, .xwikitabbar {
   .gradient-effect(@theme-panelHeaderBackgroundColor);
+}
+
+.xwikitabbar {
+  border: 1px solid @panel-default-border;
 }
 
 // Action Menus ===============================================================
@@ -187,6 +191,3 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 form label span {
   text-transform: none; // Fixing after uppercase (ex. xRequired)
 }
-
-
-
