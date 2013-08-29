@@ -218,7 +218,7 @@ input[type="text"].empty {
 .xwikitabbar {
   .nav;
   .nav-tabs;
-  padding-left: 2em; // Value from ul, ol
+  padding-left: 1em;
   margin: 0;
   
   #panelEditorSteps& { // Administration: Panel Wizard
@@ -264,6 +264,7 @@ input[type="text"].empty {
   .submenu {
     background-color: @dropdown-bg;
     border: @border-width solid @dropdown-border;
+    .box-shadow(0 6px 12px rgba(0,0,0,.175));
     a {
       color: @dropdown-link-color;
     }
@@ -293,18 +294,24 @@ input[type="text"].empty {
 #mainContentArea, #mainEditArea,
 #xdocFooter,
 #docextrapanes {
-  border: @border-width solid @theme-borderColor;
+  border: @border-width solid @nav-tabs-border-color;
 }
 
 #docextrapanes, #xdocFooter {
   .border-bottom-width(@border-width);
 }
 
-#docextrapanes, #xdocFooter {
+#docextrapanes, #xdocFooter, 
+.actionmenu .submenu {
   .border-bottom-radius(@border-radius-base);
 }
 
 // Containers =================================================================
+
+#mainContentArea, #mainEditArea, 
+#xdocFooter, #docextrapanes {
+  background: @body-bg;
+}
 
 #footerglobal {
   .text-muted;
