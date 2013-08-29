@@ -226,6 +226,16 @@ input[type="text"].empty {
   .nav-tabs;
   padding-left: 2em; // Value from ul, ol
   margin: 0;
+  
+  #panelEditorSteps& { // Administration: Panel Wizard
+    &>li { 
+      float: none;
+      display: inline-block;
+    }
+    &:after {
+      clear: none;
+    }
+  }
 }
 
 // ActionMenus ================================================================  
