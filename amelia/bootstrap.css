@@ -6530,8 +6530,7 @@ input[type="text"].empty {
 .panels .panel {
   border-color: #0d747c;
 }
-.xwikipaneltitle,
-.xwikitabbar {
+.xwikipaneltitle {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -6544,25 +6543,151 @@ input[type="text"].empty {
   border-color: #0d747c;
   margin: 0;
 }
-.xwikipaneltitle > a,
-.xwikitabbar > a {
+.xwikipaneltitle > a {
   color: inherit;
 }
-.xwikipaneltitle + .panel-collapse .panel-body,
-.xwikitabbar + .panel-collapse .panel-body {
+.xwikipaneltitle + .panel-collapse .panel-body {
   border-top-color: #0d747c;
 }
 .xwikipanelcontents {
   padding: 15px;
+}
+.xwikitabbar {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #15b5c1;
+  padding-left: 1em;
+  margin: 0;
+}
+.xwikitabbar:before,
+.xwikitabbar:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.xwikitabbar:after {
+  clear: both;
+}
+.xwikitabbar:before,
+.xwikitabbar:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.xwikitabbar:after {
+  clear: both;
+}
+.xwikitabbar > li {
+  position: relative;
+  display: block;
+}
+.xwikitabbar > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.xwikitabbar > li > a:hover,
+.xwikitabbar > li > a:focus {
+  text-decoration: none;
+  background-color: #15b5c1;
+}
+.xwikitabbar > li.disabled > a {
+  color: #bbbbbb;
+}
+.xwikitabbar > li.disabled > a:hover,
+.xwikitabbar > li.disabled > a:focus {
+  color: #bbbbbb;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.xwikitabbar .open > a,
+.xwikitabbar .open > a:hover,
+.xwikitabbar .open > a:focus {
+  background-color: #15b5c1;
+  border-color: #e8d069;
+}
+.xwikitabbar .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.xwikitabbar > li > a > img {
+  max-width: none;
+}
+.xwikitabbar > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.xwikitabbar > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.xwikitabbar > li > a:hover {
+  border-color: transparent transparent #15b5c1;
+}
+.xwikitabbar > li.active > a,
+.xwikitabbar > li.active > a:hover,
+.xwikitabbar > li.active > a:focus {
+  color: #ffffff;
+  background-color: #15b5c1;
+  border: 1px solid transparent;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.xwikitabbar.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.xwikitabbar.nav-justified > li {
+  float: none;
+}
+.xwikitabbar.nav-justified > li > a {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .xwikitabbar.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+}
+.xwikitabbar.nav-justified > li > a {
+  border-bottom: 1px solid transparent;
+  margin-right: 0;
+}
+.xwikitabbar.nav-justified > .active > a {
+  border-bottom-color: transparent;
+}
+#panelEditorSteps.xwikitabbar > li {
+  float: none;
+  display: inline-block;
+}
+#panelEditorSteps.xwikitabbar:after {
+  clear: none;
 }
 #mainmenu {
   background-color: #debb27;
   border-color: #b6991c;
   color: #bbbbbb;
 }
-#mainmenu.actionmenu a,
 #mainmenu .tmetype {
   color: #ffffff;
+}
+#mainmenu.actionmenu a {
+  color: #ffffff;
+}
+#mainmenu.actionmenu .submenu a {
+  color: #444444;
 }
 #mainmenu .menuarrow {
   border-top-color: #ffffff;
@@ -6572,19 +6697,22 @@ input[type="text"].empty {
   border-color: #911821;
   color: #bbbbbb;
 }
-.actionmenu a,
-.tmetype {
+.actionmenu a {
   color: #ffffff;
 }
 .actionmenu .submenu {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
-.actionmenu .submenu a,
-#mainmenu.actionmenu .submenu a {
+.actionmenu .submenu a {
   color: #444444;
 }
-.submenu .submenuseparator {
+.tmetype {
+  color: #ffffff;
+}
+.submenuseparator {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
@@ -6604,6 +6732,7 @@ input[type="text"].empty {
   border-left: 4px solid transparent;
   border-bottom: 0 dotted;
   content: "";
+  border-top-color: #ffffff;
   text-indent: -9999px;
 }
 .btn-default .menuarrow {
@@ -6615,6 +6744,28 @@ input[type="text"].empty {
 .btn-danger .menuarrow,
 .btn-info .menuarrow {
   border-top-color: #fff;
+}
+#mainContentArea,
+#mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  border: 1px solid #15b5c1;
+}
+#docextrapanes,
+#xdocFooter {
+  border-width: 0 1px 1px;
+}
+#docextrapanes,
+#xdocFooter,
+.actionmenu .submenu {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#mainContentArea,
+#mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  background: #108a93;
 }
 #footerglobal {
   color: rgba(255, 255, 255, 0.6);

@@ -6711,7 +6711,7 @@ input[type="text"].empty {
   padding-left: 0;
   list-style: none;
   border-bottom: 1px solid #e8e8e8;
-  padding-left: 2em;
+  padding-left: 1em;
   margin: 0;
 }
 .xwikitabbar:before,
@@ -6857,6 +6857,8 @@ input[type="text"].empty {
 .actionmenu .submenu {
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 .actionmenu .submenu a {
   color: #636b75;
@@ -6908,9 +6910,16 @@ input[type="text"].empty {
   border-width: 0 1px 1px;
 }
 #docextrapanes,
-#xdocFooter {
+#xdocFooter,
+.actionmenu .submenu {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+#mainContentArea,
+#mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  background: #ffffff;
 }
 #footerglobal {
   color: #9f9f9f;
@@ -7064,6 +7073,9 @@ h6 {
 table th {
   background-color: #f3f3f3;
 }
+#body {
+  background-color: #f5f5f5;
+}
 .panel-title {
   border: none;
 }
@@ -7078,6 +7090,8 @@ table th {
 }
 .xwikitabbar {
   border: 1px solid #e8e8e8;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .actionmenu {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbfbfb), color-stop(90%, #e1e1e1), to(#dcdcdc));
