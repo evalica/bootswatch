@@ -20,6 +20,25 @@
   text-transform: uppercase;
 }
 
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border;) {
+  border-color: @border;
+  & > .panel-heading {
+    color: @heading-text-color;
+    .gradient-effect(@heading-bg-color);
+    border-color: @heading-border;
+    + .panel-collapse .panel-body {
+      border-top-color: @border;
+    }
+  }
+  & > .panel-footer {
+      .gradient-effect(@heading-bg-color);
+    + .panel-collapse .panel-body {
+      border-bottom-color: @border;
+    }
+  }
+}
+
+
 // Navbar =====================================================================
 
 .navbar {
@@ -118,8 +137,6 @@ h1, h2, h3, h4 , h5, h6 {
 }
 
 // Forms ======================================================================
-
-// Navs =======================================================================
 
 // Indicators =================================================================
 
