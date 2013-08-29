@@ -6834,9 +6834,14 @@ input[type="text"].empty {
   border-color: #014f74;
   color: #f3f3f3;
 }
-#mainmenu.actionmenu a,
 #mainmenu .tmetype {
   color: #f3f3f3;
+}
+#mainmenu.actionmenu a {
+  color: #f3f3f3;
+}
+#mainmenu.actionmenu .submenu a {
+  color: #636b75;
 }
 #mainmenu .menuarrow {
   border-top-color: #f3f3f3;
@@ -6846,19 +6851,20 @@ input[type="text"].empty {
   border-color: #d0d0d0;
   color: #4d5860;
 }
-.actionmenu a,
-.tmetype {
+.actionmenu a {
   color: #4d5860;
 }
 .actionmenu .submenu {
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
 }
-.actionmenu .submenu a,
-#mainmenu.actionmenu .submenu a {
+.actionmenu .submenu a {
   color: #636b75;
 }
-.submenu .submenuseparator {
+.tmetype {
+  color: #4d5860;
+}
+.submenuseparator {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
