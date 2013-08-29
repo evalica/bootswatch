@@ -154,11 +154,9 @@ input[type="text"].empty {
 }
 
 .xform {
-
   input[type="text"], input[type="password"], select, textarea {
     width: 100%;
   }
-
   dl {
     dt {
       margin-top: floor(@font-size-base * 1.4);
@@ -167,21 +165,17 @@ input[type="text"].empty {
       }
     }
   }
-
   .xHint, .xRequired {
     .text-muted;
     font-size: floor(@font-size-base * 0.9);
     font-weight: 400;
   }
-
   .xHint {
     display: block;
   }
-
   .xErrorMsg {
     color: @state-danger-text;
   }
-
   .xErrorField {
     border-color: @state-danger-bg;
   }
@@ -244,36 +238,43 @@ input[type="text"].empty {
   background-color: @navbar-inverse-bg;
   border-color: @navbar-inverse-border;
   color: @navbar-inverse-color;
-}
-
-#mainmenu.actionmenu a, #mainmenu .tmetype {
-  color: @navbar-inverse-link-color;
-}
-
-#mainmenu .menuarrow {
-  border-top-color: @navbar-inverse-link-color;
+  .tmetype {
+    color: @navbar-inverse-link-color;
+  }
+  &.actionmenu {
+    a {
+      color: @navbar-inverse-link-color;
+    }
+    .submenu a {
+      color: @dropdown-link-color;
+    }
+  }
+  .menuarrow {
+    border-top-color: @navbar-inverse-link-color;
+  }
 }
 
 .actionmenu {
   background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
   color: @navbar-default-color;
+  a {
+    color: @navbar-default-link-color;
+  }
+  .submenu {
+    background-color: @dropdown-bg;
+    border: @border-width solid @dropdown-border;
+    a {
+      color: @dropdown-link-color;
+    }
+  }
 }
 
-.actionmenu a, .tmetype {
+.tmetype {
   color: @navbar-default-link-color;
 }
 
-.actionmenu .submenu {
-  background-color: @dropdown-bg;
-  border: @border-width solid @dropdown-border;
-}
-
-.actionmenu .submenu a, #mainmenu.actionmenu .submenu a {
-  color: @dropdown-link-color;
-}
-
-.submenu .submenuseparator {
+.submenuseparator {
   .dropdown-menu .divider;
 }
 
