@@ -6675,6 +6675,50 @@ input[type="text"].empty {
 #panelEditorSteps.xwikitabbar:after {
   clear: none;
 }
+.language-translation,
+.language-default {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #474949;
+  font-weight: 400;
+}
+.language-translation[href]:hover,
+.language-default[href]:hover,
+.language-translation[href]:focus,
+.language-default[href]:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.language-translation:empty,
+.language-default:empty {
+  display: none;
+}
+.language-translation[href]:hover,
+.language-default[href]:hover,
+.language-translation[href]:focus,
+.language-default[href]:focus {
+  background-color: #2e2f2f;
+}
+.language-default {
+  font-style: italic;
+}
+.language-current {
+  background-color: #d9230f;
+  font-weight: 700;
+}
+.language-current[href]:hover,
+.language-current[href]:focus {
+  background-color: #a91b0c;
+}
 #mainmenu {
   background-color: #d9230f;
   border-color: #a91b0c;
