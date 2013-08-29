@@ -6527,21 +6527,11 @@ input[type="text"].empty {
   float: none;
   padding-left: 0;
 }
-.panel {
+.panels .panel {
   border-color: #0d747c;
 }
-.panel > .panel-heading {
-  color: #444444;
-  background-color: #18cbd8;
-  border-color: #0d747c;
-}
-.panel > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #0d747c;
-}
-.panel > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #0d747c;
-}
-.xwikipaneltitle {
+.xwikipaneltitle,
+.xwikitabbar {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -6554,14 +6544,77 @@ input[type="text"].empty {
   border-color: #0d747c;
   margin: 0;
 }
-.xwikipaneltitle > a {
+.xwikipaneltitle > a,
+.xwikitabbar > a {
   color: inherit;
 }
-.xwikipaneltitle + .panel-collapse .panel-body {
+.xwikipaneltitle + .panel-collapse .panel-body,
+.xwikitabbar + .panel-collapse .panel-body {
   border-top-color: #0d747c;
 }
 .xwikipanelcontents {
   padding: 15px;
+}
+#mainmenu {
+  background-color: #debb27;
+  border-color: #b6991c;
+  color: #bbbbbb;
+}
+#mainmenu.actionmenu a,
+#mainmenu .tmetype {
+  color: #ffffff;
+}
+#mainmenu .menuarrow {
+  border-top-color: #ffffff;
+}
+.actionmenu {
+  background-color: #ad1d28;
+  border-color: #911821;
+  color: #bbbbbb;
+}
+.actionmenu a,
+.tmetype {
+  color: #ffffff;
+}
+.actionmenu .submenu {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.actionmenu .submenu a,
+#mainmenu.actionmenu .submenu a {
+  color: #444444;
+}
+.submenu .submenuseparator {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.topmenuentry .separator {
+  color: #bbbbbb;
+}
+.menuarrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-bottom: 0 dotted;
+  content: "";
+  text-indent: -9999px;
+}
+.btn-default .menuarrow {
+  border-top-color: #444444;
+}
+.btn-primary .menuarrow,
+.btn-success .menuarrow,
+.btn-warning .menuarrow,
+.btn-danger .menuarrow,
+.btn-info .menuarrow {
+  border-top-color: #fff;
 }
 #footerglobal {
   color: rgba(255, 255, 255, 0.6);
