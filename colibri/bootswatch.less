@@ -6,7 +6,7 @@
 // Mixins =====================================================================
 
 .gradient-effect(@color) {
-  #gradient > .vertical-three-colors(lighten(@color, 15%), @color, 50%, darken(@color, 4%));
+  #gradient > .vertical-three-colors(lighten(@color, 10%), @color, 90%, darken(@color, 2%));
 }
 
 .btn-shadow(@color) {
@@ -154,7 +154,18 @@ h1, h2, h3, h4 , h5, h6 {
   .gradient-effect(@theme-panelHeaderBackgroundColor);
 }
 
-// Uppercase Text =====================================================
+// Action Menus ===============================================================
+
+.actionmenu {
+  .gradient-effect(@navbar-default-bg);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+#mainmenu {
+  .btn-shadow(@navbar-inverse-bg);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+// Uppercase Text =============================================================
 
 .btn, 
 form label, // All form labels are uppercase, some labels (ex. SendMessage) are not
