@@ -209,6 +209,15 @@ input[type="text"].empty {
   padding: @alert-padding;
 }
 
+.xwikitabbar li a {
+  color: @panel-default-text;
+}
+
+.xwikitabbar li.active a {
+  color: @nav-tabs-active-link-hover-color;
+  background-color: @nav-tabs-active-link-hover-bg;
+}
+
 // ActionMenus ================================================================  
 
 #mainmenu {
@@ -254,6 +263,7 @@ input[type="text"].empty {
 
 .menuarrow {
   .caret;
+  border-top-color: @navbar-default-link-color;
   text-indent: -9999px;
 }
 
