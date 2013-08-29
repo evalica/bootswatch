@@ -209,6 +209,54 @@ input[type="text"].empty {
   padding: @alert-padding;
 }
 
+// ActionMenus ================================================================  
+
+#mainmenu {
+  background-color: @navbar-inverse-bg;
+  border-color: @navbar-inverse-border;
+  color: @navbar-inverse-color;
+}
+
+#mainmenu.actionmenu a, #mainmenu .tmetype {
+  color: @navbar-inverse-link-color;
+}
+
+#mainmenu .menuarrow {
+  border-top-color: @navbar-inverse-link-color;
+}
+
+.actionmenu {
+  background-color: @navbar-default-bg;
+  border-color: @navbar-default-border;
+  color: @navbar-default-color;
+}
+
+.actionmenu a, .tmetype {
+  color: @navbar-default-link-color;
+}
+
+.actionmenu .submenu {
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-border;
+}
+
+.actionmenu .submenu a, #mainmenu.actionmenu .submenu a {
+  color: @dropdown-link-color;
+}
+
+.submenu .submenuseparator {
+  .dropdown-menu .divider;
+}
+
+.topmenuentry .separator {
+  color: @navbar-default-color;
+}
+
+.menuarrow {
+  .caret;
+  text-indent: -9999px;
+}
+
 // Containers =================================================================
 
 #footerglobal {
