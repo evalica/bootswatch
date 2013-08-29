@@ -1,0 +1,45 @@
+// This file contains values and classes specific to XWiki (http://www.xwiki.org)
+// XWiki-Common: common selectors that are used by any theme (layout)
+// ----------------------------------------------------------------------------
+
+// Local Variables ============================================================
+
+@border-width: 1px;
+
+// Local Mixins ===============================================================
+
+.border-top-width(@width) {
+  border-width: @width @width 0;
+}
+
+.border-bottom-width(@width) {
+  border-width: 0 @width @width;
+}
+
+// Borders ====================================================================
+
+#mainContentArea, #mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  border: @border-width solid @nav-tabs-border-color;
+}
+
+#docextrapanes, #xdocFooter {
+  .border-bottom-width(@border-width);
+}
+
+#docextrapanes, #xdocFooter, 
+.actionmenu .submenu {
+  .border-bottom-radius(@border-radius-base);
+}
+
+// Containers =================================================================
+
+#mainContentArea, #mainEditArea, 
+#xdocFooter, #docextrapanes {
+  background: @body-bg;
+}
+
+#footerglobal {
+  .text-muted;
+}
