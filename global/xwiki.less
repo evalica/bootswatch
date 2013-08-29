@@ -36,6 +36,18 @@
 @theme-notificationWarningColor:       #D09000; // VALUE: $theme.notificationWarningColor;
 @theme-notificationErrorColor:         #CC3333; // VALUE: $theme.notificationErrorColor;
 
+@border-width: 1px;
+
+// Mixins =====================================================================
+
+.border-top-width(@width) {
+  border-width: @width @width 0;
+}
+
+.border-bottom-width(@width) {
+  border-width: 0 @width @width;
+}
+
 // General ====================================================================
 
 .clearfloats:extend(.clearfix all) {}
@@ -246,7 +258,7 @@ input[type="text"].empty {
 
 .actionmenu .submenu {
   background-color: @dropdown-bg;
-  border: 1px solid @dropdown-border;
+  border: @border-width solid @dropdown-border;
 }
 
 .actionmenu .submenu a, #mainmenu.actionmenu .submenu a {
@@ -265,6 +277,30 @@ input[type="text"].empty {
   .caret;
   border-top-color: @navbar-default-link-color;
   text-indent: -9999px;
+}
+
+// Borders ====================================================================
+
+#mainContentArea, #mainEditArea,
+#xdocFooter,
+#docextrapanes, ul.xwikitabbar {
+  border: @border-width solid @theme-borderColor;
+}
+
+ul.xwikitabbar {
+  .border-top-width(@border-width);
+}
+
+#docextrapanes, #xdocFooter {
+  .border-bottom-width(@border-width);
+}
+
+.xwikitabbar li.active a {
+  .border-top-radius(@border-radius-base);
+}
+
+#docextrapanes, #xdocFooter {
+  .border-bottom-radius(@border-radius-base);
 }
 
 // Containers =================================================================
