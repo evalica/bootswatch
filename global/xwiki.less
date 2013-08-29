@@ -215,6 +215,8 @@ input[type="text"].empty {
   padding: @alert-padding;
 }
 
+// Tabbar =====================================================================
+
 .xwikitabbar {
   .nav;
   .nav-tabs;
@@ -229,6 +231,24 @@ input[type="text"].empty {
     &:after {
       clear: none;
     }
+  }
+}
+
+// Labels =====================================================================
+
+.language {
+  &-translation, 
+  &-default {
+    .label;
+    .label-default;
+    font-weight: 400;
+  }
+  &-default {
+    font-style: italic;
+  }
+  &-current {
+    .label-primary;
+    font-weight: 700;
   }
 }
 
