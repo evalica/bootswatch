@@ -43,3 +43,23 @@
 #footerglobal {
   .text-muted;
 }
+
+// Bugs =======================================================================
+
+table {
+  &.listTable table { // FIX: AllDocs: Tree
+    width: auto;
+  }
+}
+
+.xwikitabbar {
+  #panelEditorSteps& { // FIX: Administration: Panel Wizard
+    &>li { 
+      float: none;
+      display: inline-block;
+    }
+    &:after {
+      clear: none;
+    }
+  }
+}
