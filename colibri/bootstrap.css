@@ -752,7 +752,39 @@ pre code {
 .col-lg-12,
 .full,
 .half,
-.third {
+.third,
+#contentcontainer.content #leftPanels,
+#contentcontainer.content #leftPanels,
+#contentcontainer.content #leftPanels,
+#contentcontainer.content #leftPanels,
+#contentcontainer.content #contentcolumn,
+#contentcontainer.content #contentcolumn,
+#contentcontainer.content #contentcolumn,
+#contentcontainer.content #contentcolumn,
+#contentcontainer.content #rightPanels,
+#contentcontainer.content #rightPanels,
+#contentcontainer.content #rightPanels,
+#contentcontainer.content #rightPanels,
+#contentcontainer.contenthideleft #contentcolumn,
+#contentcontainer.contenthideleft #contentcolumn,
+#contentcontainer.contenthideleft #contentcolumn,
+#contentcontainer.contenthideleft #contentcolumn,
+#contentcontainer.contenthideleft #rightPanels,
+#contentcontainer.contenthideleft #rightPanels,
+#contentcontainer.contenthideleft #rightPanels,
+#contentcontainer.contenthideleft #rightPanels,
+#contentcontainer.contenthideright #leftPanels,
+#contentcontainer.contenthideright #leftPanels,
+#contentcontainer.contenthideright #leftPanels,
+#contentcontainer.contenthideright #leftPanels,
+#contentcontainer.contenthideright #contentcolumn,
+#contentcontainer.contenthideright #contentcolumn,
+#contentcontainer.contenthideright #contentcolumn,
+#contentcontainer.contenthideright #contentcolumn,
+#contentcontainer.contenthidelefthideright #contentcolumn,
+#contentcontainer.contenthidelefthideright #contentcolumn,
+#contentcontainer.contenthidelefthideright #contentcolumn,
+#contentcontainer.contenthidelefthideright #contentcolumn {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -804,7 +836,15 @@ pre code {
 .col-xs-11 {
   width: 91.66666666666666%;
 }
-.col-xs-12 {
+.col-xs-12,
+#contentcontainer.content #leftPanels,
+#contentcontainer.content #contentcolumn,
+#contentcontainer.content #rightPanels,
+#contentcontainer.contenthideleft #contentcolumn,
+#contentcontainer.contenthideleft #rightPanels,
+#contentcontainer.contenthideright #leftPanels,
+#contentcontainer.contenthideright #contentcolumn,
+#contentcontainer.contenthidelefthideright #contentcolumn {
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -857,7 +897,15 @@ pre code {
   .col-sm-11 {
     width: 91.66666666666666%;
   }
-  .col-sm-12 {
+  .col-sm-12,
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #contentcolumn,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #contentcolumn,
+  #contentcontainer.contenthideleft #rightPanels,
+  #contentcontainer.contenthideright #leftPanels,
+  #contentcontainer.contenthideright #contentcolumn,
+  #contentcontainer.contenthidelefthideright #contentcolumn {
     width: 100%;
   }
   .col-sm-push-1 {
@@ -974,7 +1022,14 @@ pre code {
   .col-md-8,
   .col-md-9,
   .col-md-10,
-  .col-md-11 {
+  .col-md-11,
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #contentcolumn,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #contentcolumn,
+  #contentcontainer.contenthideleft #rightPanels,
+  #contentcontainer.contenthideright #leftPanels,
+  #contentcontainer.contenthideright #contentcolumn {
     float: left;
   }
   .col-md-1 {
@@ -983,7 +1038,11 @@ pre code {
   .col-md-2 {
     width: 16.666666666666664%;
   }
-  .col-md-3 {
+  .col-md-3,
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #rightPanels,
+  #contentcontainer.contenthideright #leftPanels {
     width: 25%;
   }
   .col-md-4 {
@@ -992,7 +1051,8 @@ pre code {
   .col-md-5 {
     width: 41.66666666666667%;
   }
-  .col-md-6 {
+  .col-md-6,
+  #contentcontainer.content #contentcolumn {
     width: 50%;
   }
   .col-md-7 {
@@ -1001,7 +1061,9 @@ pre code {
   .col-md-8 {
     width: 66.66666666666666%;
   }
-  .col-md-9 {
+  .col-md-9,
+  #contentcontainer.contenthideleft #contentcolumn,
+  #contentcontainer.contenthideright #contentcolumn {
     width: 75%;
   }
   .col-md-10 {
@@ -1010,7 +1072,8 @@ pre code {
   .col-md-11 {
     width: 91.66666666666666%;
   }
-  .col-md-12 {
+  .col-md-12,
+  #contentcontainer.contenthidelefthideright #contentcolumn {
     width: 100%;
   }
   .col-md-push-0 {
@@ -1094,7 +1157,9 @@ pre code {
   .col-md-offset-2 {
     margin-left: 16.666666666666664%;
   }
-  .col-md-offset-3 {
+  .col-md-offset-3,
+  #contentcontainer.content #contentcolumn,
+  #contentcontainer.contenthideright #contentcolumn {
     margin-left: 25%;
   }
   .col-md-offset-4 {
@@ -1112,7 +1177,9 @@ pre code {
   .col-md-offset-8 {
     margin-left: 66.66666666666666%;
   }
-  .col-md-offset-9 {
+  .col-md-offset-9,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #rightPanels {
     margin-left: 75%;
   }
   .col-md-offset-10 {
@@ -1138,7 +1205,14 @@ pre code {
   .col-lg-10,
   .col-lg-11,
   .half,
-  .third {
+  .third,
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #contentcolumn,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #contentcolumn,
+  #contentcontainer.contenthideleft #rightPanels,
+  #contentcontainer.contenthideright #leftPanels,
+  #contentcontainer.contenthideright #contentcolumn {
     float: left;
   }
   .col-lg-1 {
@@ -1147,7 +1221,11 @@ pre code {
   .col-lg-2 {
     width: 16.666666666666664%;
   }
-  .col-lg-3 {
+  .col-lg-3,
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #rightPanels,
+  #contentcontainer.contenthideright #leftPanels {
     width: 25%;
   }
   .col-lg-4,
@@ -1158,7 +1236,8 @@ pre code {
     width: 41.66666666666667%;
   }
   .col-lg-6,
-  .half {
+  .half,
+  #contentcontainer.content #contentcolumn {
     width: 50%;
   }
   .col-lg-7 {
@@ -1167,7 +1246,9 @@ pre code {
   .col-lg-8 {
     width: 66.66666666666666%;
   }
-  .col-lg-9 {
+  .col-lg-9,
+  #contentcontainer.contenthideleft #contentcolumn,
+  #contentcontainer.contenthideright #contentcolumn {
     width: 75%;
   }
   .col-lg-10 {
@@ -1177,7 +1258,8 @@ pre code {
     width: 91.66666666666666%;
   }
   .col-lg-12,
-  .full {
+  .full,
+  #contentcontainer.contenthidelefthideright #contentcolumn {
     width: 100%;
   }
   .col-lg-push-0 {
@@ -1261,7 +1343,9 @@ pre code {
   .col-lg-offset-2 {
     margin-left: 16.666666666666664%;
   }
-  .col-lg-offset-3 {
+  .col-lg-offset-3,
+  #contentcontainer.content #contentcolumn,
+  #contentcontainer.contenthideright #contentcolumn {
     margin-left: 25%;
   }
   .col-lg-offset-4 {
@@ -1279,7 +1363,9 @@ pre code {
   .col-lg-offset-8 {
     margin-left: 66.66666666666666%;
   }
-  .col-lg-offset-9 {
+  .col-lg-offset-9,
+  #contentcontainer.content #rightPanels,
+  #contentcontainer.contenthideleft #rightPanels {
     margin-left: 75%;
   }
   .col-lg-offset-10 {
@@ -6972,6 +7058,21 @@ table.listTable table {
 }
 #panelEditorSteps.xwikitabbar:after {
   clear: none;
+}
+@media (min-width: 992px) {
+  #contentcontainer {
+    position: relative;
+  }
+  #contentcontainer.content #leftPanels,
+  #contentcontainer.content #rightPanels {
+    position: absolute;
+  }
+  #contentcontainer.contenthideleft #rightPanels {
+    position: absolute;
+  }
+  #contentcontainer.contenthideright #leftPanels {
+    position: absolute;
+  }
 }
 .text-uppercase {
   font-size: 11px;
