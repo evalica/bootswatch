@@ -1,3 +1,98 @@
 // This file contains values and classes specific to XWiki (http://www.xwiki.org)
 // XWiki-Layout: defines how main containers are arranged
 // ----------------------------------------------------------------------------
+
+// VIEW Layout ================================================================
+
+#contentcontainer {
+  &.content {
+    #leftPanels {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-3);
+      &:extend(.col-lg-3);
+    }
+    #contentcolumn {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-6);
+      &:extend(.col-md-offset-3);
+      &:extend(.col-lg-6);
+      &:extend(.col-lg-offset-3);
+    }
+    #rightPanels {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-3);
+      &:extend(.col-md-offset-9);
+      &:extend(.col-lg-3);
+      &:extend(.col-lg-offset-9);
+    }
+  }
+
+  &.contenthideleft {
+    #contentcolumn {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-9);
+      &:extend(.col-lg-9);
+    }
+    #rightPanels {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-3);
+      &:extend(.col-md-offset-9);
+      &:extend(.col-lg-3);
+      &:extend(.col-lg-offset-9);
+    }
+  }
+
+  &.contenthideright {
+    #leftPanels {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-3);
+      &:extend(.col-lg-3);
+    }
+    #contentcolumn {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-9);
+      &:extend(.col-md-offset-3);
+      &:extend(.col-lg-9);
+      &:extend(.col-lg-offset-3);
+    }
+  }
+
+  &.contenthidelefthideright {
+    #contentcolumn {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-12);
+      &:extend(.col-lg-12);
+    }
+  }
+}
+
+@media (min-width: @screen-md) {
+#contentcontainer {
+    position: relative;
+    &.content {
+      #leftPanels, #rightPanels {
+        position: absolute;
+      }
+    }
+    &.contenthideleft {
+      #rightPanels {
+        position: absolute;
+      }
+    }
+    &.contenthideright {
+      #leftPanels {
+        position: absolute;
+      }
+    }
+  }
+}
+
+// EDIT Layout ================================================================
