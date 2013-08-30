@@ -6245,7 +6245,8 @@ span.infomessage {
   padding: 2px;
 }
 .box,
-.plainmessage {
+.plainmessage,
+fieldset.xwikimessage {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -6256,7 +6257,8 @@ span.infomessage {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .box blockquote,
-.plainmessage blockquote {
+.plainmessage blockquote,
+fieldset.xwikimessage blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -6306,9 +6308,6 @@ span.infomessage {
 }
 .infomessage .alert-link {
   color: #264c73;
-}
-.accordionTabTitleBar h1 {
-  font-size: 14px;
 }
 input.button,
 .buttonwrapper button,
@@ -6935,6 +6934,9 @@ input[type="text"].empty {
 .btn-danger .menuarrow,
 .btn-info .menuarrow {
   border-top-color: #fff;
+}
+.accordionTabTitleBar h1 {
+  font-size: 14px;
 }
 #mainContentArea,
 #mainEditArea,
