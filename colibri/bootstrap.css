@@ -6822,13 +6822,6 @@ input[type="text"].empty {
 .xwikitabbar.nav-justified > .active > a {
   border-bottom-color: #ffffff;
 }
-#panelEditorSteps.xwikitabbar > li {
-  float: none;
-  display: inline-block;
-}
-#panelEditorSteps.xwikitabbar:after {
-  clear: none;
-}
 .language-translation,
 .language-default {
   display: inline;
@@ -6967,6 +6960,16 @@ input[type="text"].empty {
 }
 #footerglobal {
   color: #9f9f9f;
+}
+table.listTable table {
+  width: auto;
+}
+#panelEditorSteps.xwikitabbar > li {
+  float: none;
+  display: inline-block;
+}
+#panelEditorSteps.xwikitabbar:after {
+  clear: none;
 }
 .text-uppercase {
   font-size: 11px;
