@@ -294,7 +294,7 @@
 // Navs
 // -------------------------
 
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          10px floor(@grid-gutter-width / 2); // OLD: 10px 15px;
 @nav-link-hover-bg:                         @theme-backgroundSecondaryColor; // OLD: @gray-lighter;
 
 @nav-disabled-link-color:                   @theme-textSecondaryColor; // OLD: @gray-light;

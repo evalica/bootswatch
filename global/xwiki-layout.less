@@ -115,3 +115,40 @@
     &:extend(.col-lg-offset-9);
   }
 }
+
+// Paddings ===================================================================
+
+@padding-grid-vertical:          @grid-gutter-width / 2;
+@padding-grid-horizontal:        @grid-gutter-width / 2;
+
+.padding-grid { // Used to align to grid
+  padding: @padding-grid-vertical @padding-grid-horizontal;
+}
+
+.padding-container { // Used for layout containers
+  padding: @padding-grid-vertical @grid-gutter-width;
+}
+
+#contentcontainer, #edit {
+  padding: @padding-grid-vertical 0; // The horizontal values are given by #contentcolumn, #leftPanels and #rightPanels
+  margin: 0 -@padding-grid-horizontal;
+}
+
+#headerglobal, #footerglobal {
+  padding: 0 @padding-grid-horizontal; // Align with #contentcontainer grid columns
+}
+
+.xwikitabbar {
+  padding-left: @padding-grid-horizontal; // Leave a left space before displaying the tabs
+}
+
+#mainContentArea, #mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  .padding-container;
+}
+
+#globallinks, .xwikipanelcontents {
+  .padding-grid;
+}
+
