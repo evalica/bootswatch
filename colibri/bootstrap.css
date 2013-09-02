@@ -6852,15 +6852,11 @@ input[type="text"].empty {
 .xwikipaneltitle + .panel-collapse .panel-body {
   border-top-color: #e8e8e8;
 }
-.xwikipanelcontents {
-  padding: 15px;
-}
 .xwikitabbar {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   border-bottom: 1px solid #e8e8e8;
-  padding-left: 1em;
   margin: 0;
 }
 .xwikitabbar:before,
@@ -7143,6 +7139,34 @@ table.listTable table {
 }
 #xwikieditor #editPanels {
   position: absolute;
+}
+.padding-grid {
+  padding: 15px 15px;
+}
+.padding-container {
+  padding: 15px 30px;
+}
+#contentcontainer,
+#edit {
+  padding: 15px 0;
+  margin: 0 -15px;
+}
+#headerglobal,
+#footerglobal {
+  padding: 0 15px;
+}
+.xwikitabbar {
+  padding-left: 15px;
+}
+#mainContentArea,
+#mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  padding: 15px 30px;
+}
+#globallinks,
+.xwikipanelcontents {
+  padding: 15px 15px;
 }
 .text-uppercase {
   font-size: 11px;
