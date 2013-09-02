@@ -6417,6 +6417,48 @@ fieldset.xwikimessage blockquote {
 .infomessage .alert-link {
   color: #264c73;
 }
+.xwikirenderingerror {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  background-color: #f5d6d6;
+  border-color: #f0c2c9;
+  color: #cc3333;
+  margin-bottom: 0;
+}
+.xwikirenderingerror blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.xwikirenderingerror hr {
+  border-top-color: #ebadb8;
+}
+.xwikirenderingerror .alert-link {
+  color: #a32929;
+}
+.xwikirenderingerrordescription {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-color: #f0c2c9;
+  border-style: solid;
+}
+.xwikirenderingerrordescription blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
 input.button,
 .buttonwrapper button,
 .buttonwrapper a {
