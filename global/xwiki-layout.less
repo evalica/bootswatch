@@ -134,7 +134,7 @@
   margin: 0 -@padding-grid-horizontal;
 }
 
-#headerglobal, #footerglobal {
+#footerglobal {
   padding: 0 @padding-grid-horizontal; // Align with #contentcontainer grid columns
 }
 
@@ -148,7 +148,18 @@
   .padding-container;
 }
 
-#globallinks, .xwikipanelcontents {
+.xwikipanelcontents {
   .padding-grid;
 }
 
+#globallinks { // Align it with the panels
+  &:extend(.col-md-3);
+  &:extend(.col-lg-3);
+  .padding-grid;
+  .globalsearch {
+    padding-left: 2 * @padding-base-horizontal;
+  }
+  #headerlanguages {
+    padding-top: @padding-base-vertical;
+  }
+}
