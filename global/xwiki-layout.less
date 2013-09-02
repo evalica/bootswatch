@@ -96,3 +96,22 @@
 }
 
 // EDIT Layout ================================================================
+
+#xwikieditor {
+  position: relative;
+  .leftsidecolumns {
+    &:extend(.col-xs-12);
+    &:extend(.col-sm-12);
+    &:extend(.col-md-9);
+    &:extend(.col-lg-9);
+  }
+  #editPanels {
+    position: absolute;
+    &:extend(.col-xs-12);
+    &:extend(.col-sm-12);
+    &:extend(.col-md-3);
+    &:extend(.col-md-offset-9);
+    &:extend(.col-lg-3);
+    &:extend(.col-lg-offset-9);
+  }
+}
