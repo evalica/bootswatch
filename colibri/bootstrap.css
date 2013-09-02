@@ -784,7 +784,15 @@ pre code {
 #contentcontainer.contenthidelefthideright #contentcolumn,
 #contentcontainer.contenthidelefthideright #contentcolumn,
 #contentcontainer.contenthidelefthideright #contentcolumn,
-#contentcontainer.contenthidelefthideright #contentcolumn {
+#contentcontainer.contenthidelefthideright #contentcolumn,
+#xwikieditor .leftsidecolumns,
+#xwikieditor .leftsidecolumns,
+#xwikieditor .leftsidecolumns,
+#xwikieditor .leftsidecolumns,
+#xwikieditor #editPanels,
+#xwikieditor #editPanels,
+#xwikieditor #editPanels,
+#xwikieditor #editPanels {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -844,7 +852,9 @@ pre code {
 #contentcontainer.contenthideleft #rightPanels,
 #contentcontainer.contenthideright #leftPanels,
 #contentcontainer.contenthideright #contentcolumn,
-#contentcontainer.contenthidelefthideright #contentcolumn {
+#contentcontainer.contenthidelefthideright #contentcolumn,
+#xwikieditor .leftsidecolumns,
+#xwikieditor #editPanels {
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -905,7 +915,9 @@ pre code {
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
-  #contentcontainer.contenthidelefthideright #contentcolumn {
+  #contentcontainer.contenthidelefthideright #contentcolumn,
+  #xwikieditor .leftsidecolumns,
+  #xwikieditor #editPanels {
     width: 100%;
   }
   .col-sm-push-1 {
@@ -1029,7 +1041,9 @@ pre code {
   #contentcontainer.contenthideleft #contentcolumn,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  #xwikieditor .leftsidecolumns,
+  #xwikieditor #editPanels {
     float: left;
   }
   .col-md-1 {
@@ -1042,7 +1056,8 @@ pre code {
   #contentcontainer.content #leftPanels,
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
-  #contentcontainer.contenthideright #leftPanels {
+  #contentcontainer.contenthideright #leftPanels,
+  #xwikieditor #editPanels {
     width: 25%;
   }
   .col-md-4 {
@@ -1063,7 +1078,8 @@ pre code {
   }
   .col-md-9,
   #contentcontainer.contenthideleft #contentcolumn,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  #xwikieditor .leftsidecolumns {
     width: 75%;
   }
   .col-md-10 {
@@ -1179,7 +1195,8 @@ pre code {
   }
   .col-md-offset-9,
   #contentcontainer.content #rightPanels,
-  #contentcontainer.contenthideleft #rightPanels {
+  #contentcontainer.contenthideleft #rightPanels,
+  #xwikieditor #editPanels {
     margin-left: 75%;
   }
   .col-md-offset-10 {
@@ -1212,7 +1229,9 @@ pre code {
   #contentcontainer.contenthideleft #contentcolumn,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  #xwikieditor .leftsidecolumns,
+  #xwikieditor #editPanels {
     float: left;
   }
   .col-lg-1 {
@@ -1225,7 +1244,8 @@ pre code {
   #contentcontainer.content #leftPanels,
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
-  #contentcontainer.contenthideright #leftPanels {
+  #contentcontainer.contenthideright #leftPanels,
+  #xwikieditor #editPanels {
     width: 25%;
   }
   .col-lg-4,
@@ -1248,7 +1268,8 @@ pre code {
   }
   .col-lg-9,
   #contentcontainer.contenthideleft #contentcolumn,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  #xwikieditor .leftsidecolumns {
     width: 75%;
   }
   .col-lg-10 {
@@ -1365,7 +1386,8 @@ pre code {
   }
   .col-lg-offset-9,
   #contentcontainer.content #rightPanels,
-  #contentcontainer.contenthideleft #rightPanels {
+  #contentcontainer.contenthideleft #rightPanels,
+  #xwikieditor #editPanels {
     margin-left: 75%;
   }
   .col-lg-offset-10 {
@@ -7073,6 +7095,12 @@ table.listTable table {
   #contentcontainer.contenthideright #leftPanels {
     position: absolute;
   }
+}
+#xwikieditor {
+  position: relative;
+}
+#xwikieditor #editPanels {
+  position: absolute;
 }
 .text-uppercase {
   font-size: 11px;
