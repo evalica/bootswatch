@@ -792,7 +792,9 @@ pre code {
 #xwikieditor #editPanels,
 #xwikieditor #editPanels,
 #xwikieditor #editPanels,
-#xwikieditor #editPanels {
+#xwikieditor #editPanels,
+#globallinks,
+#globallinks {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1043,7 +1045,8 @@ pre code {
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
   #xwikieditor .leftsidecolumns,
-  #xwikieditor #editPanels {
+  #xwikieditor #editPanels,
+  #globallinks {
     float: left;
   }
   .col-md-1 {
@@ -1057,7 +1060,8 @@ pre code {
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #xwikieditor #editPanels {
+  #xwikieditor #editPanels,
+  #globallinks {
     width: 25%;
   }
   .col-md-4 {
@@ -1231,7 +1235,8 @@ pre code {
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
   #xwikieditor .leftsidecolumns,
-  #xwikieditor #editPanels {
+  #xwikieditor #editPanels,
+  #globallinks {
     float: left;
   }
   .col-lg-1 {
@@ -1245,7 +1250,8 @@ pre code {
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #xwikieditor #editPanels {
+  #xwikieditor #editPanels,
+  #globallinks {
     width: 25%;
   }
   .col-lg-4,
@@ -7109,6 +7115,13 @@ input[type="text"].empty {
 #footerglobal {
   color: #9f9f9f;
 }
+.globalsearch .globalsearchinput {
+  min-width: 180px;
+  width: 100%;
+}
+.globalsearch input.button {
+  margin: 0 12px 0 -28px;
+}
 table.listTable table {
   width: auto;
 }
@@ -7151,7 +7164,6 @@ table.listTable table {
   padding: 15px 0;
   margin: 0 -15px;
 }
-#headerglobal,
 #footerglobal {
   padding: 0 15px;
 }
@@ -7164,9 +7176,17 @@ table.listTable table {
 #docextrapanes {
   padding: 15px 30px;
 }
-#globallinks,
 .xwikipanelcontents {
   padding: 15px 15px;
+}
+#globallinks {
+  padding: 15px 15px;
+}
+#globallinks .globalsearch {
+  padding-left: 24px;
+}
+#globallinks #headerlanguages {
+  padding-top: 6px;
 }
 .text-uppercase {
   font-size: 11px;
