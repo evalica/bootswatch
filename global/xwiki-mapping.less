@@ -199,7 +199,7 @@ input[type="text"].empty {
   }
 }
 
-// ActionMenus ================================================================  
+// ActionMenus ================================================================
 
 #mainmenu {
   background-color: @navbar-inverse-bg;
@@ -254,4 +254,57 @@ input[type="text"].empty {
   .caret;
   border-top-color: @navbar-default-link-color;
   text-indent: -9999px;
+}
+
+// Vertical Menus =============================================================
+
+.vertical-menu {
+  ul { 
+    .text-smaller;
+    margin-left: 0;
+    .list-group;
+    li {
+      display: block;
+      .group {
+        .list-group-item;
+        padding: 0;
+        background-color: @navbar-default-bg;
+        &:hover, &.current-group {
+          background-color: @navbar-inverse-bg;
+          & a {
+            color: @navbar-inverse-link-color;
+          }
+        }
+        a {
+          color: @navbar-default-link-color;
+        }
+      }
+      ul {
+        margin-left: 0;
+        li {
+          .list-group-item;
+          padding: 0;
+          &:first-child {
+            border-radius: 0;
+          }
+          .current, 
+          .current a, 
+          .current a:hover,
+          .current a:focus {
+            color: @list-group-active-color;
+            background-color: @list-group-active-bg;
+          }
+          a {
+            display: block;
+            color: @list-group-link-color;
+            &:hover,
+            &:focus {
+              text-decoration: none;
+              background-color: @list-group-hover-bg;
+            }
+          }
+        }
+      }
+    }
+  }
 }
