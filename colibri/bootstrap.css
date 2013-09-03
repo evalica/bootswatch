@@ -7111,6 +7111,9 @@ ul.xlist li.create a {
 .accordionTabTitleBar h1 {
   font-size: 14px;
 }
+.label label {
+  color: #636b75;
+}
 #mainContentArea,
 #mainEditArea,
 #xdocFooter,
