@@ -171,8 +171,19 @@ h1, h2, h3, h4 , h5, h6 {
 }
 
 #mainmenu {
-  .btn-shadow(@navbar-inverse-bg);
+  .gradient-effect(@navbar-inverse-bg);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+// Vertical Menus =============================================================
+
+.vertical-menu {
+  .group {
+    .gradient-effect(@navbar-default-bg);
+    &:hover, &.current-group {
+      .gradient-effect(@navbar-inverse-bg);
+    }
+  }
 }
 
 // Uppercase Text =============================================================
@@ -185,7 +196,8 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 #informationcontent dt, // Information Tab
 #footerglobal, // Footer
 .accordionTabTitleBar h1, // Panel Wizard
-.xwikipaneltitle // Panel Title
+.xwikipaneltitle, // Panel Title
+.vertical-menu .group // Vertical headers
 { 
   .text-uppercase;
 }
