@@ -7087,6 +7087,27 @@ input[type="text"].empty {
 .btn-info .menuarrow {
   border-top-color: #fff;
 }
+.text-smaller {
+  font-size: 12px;
+}
+.text-muted-smaller {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+#hierarchy,
+#document-info,
+#historyform td,
+#changes-info {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+#footerglobal,
+ul.xlist li.create a {
+  color: #9f9f9f;
+}
+#document-title h1 {
+  margin-top: 10px;
+}
 .accordionTabTitleBar h1 {
   font-size: 14px;
 }
@@ -7112,9 +7133,6 @@ input[type="text"].empty {
 #docextrapanes {
   background: #ffffff;
 }
-#footerglobal {
-  color: #9f9f9f;
-}
 .globalsearch .globalsearchinput {
   min-width: 180px;
   width: 100%;
@@ -7131,6 +7149,12 @@ table.listTable table {
 }
 #panelEditorSteps.xwikitabbar:after {
   clear: none;
+}
+.padding-grid {
+  padding: 15px 15px;
+}
+.padding-container {
+  padding: 15px 30px;
 }
 @media (min-width: 992px) {
   #contentcontainer {
@@ -7152,12 +7176,6 @@ table.listTable table {
 }
 #xwikieditor #editPanels {
   position: absolute;
-}
-.padding-grid {
-  padding: 15px 15px;
-}
-.padding-container {
-  padding: 15px 30px;
 }
 #contentcontainer,
 #edit {
@@ -7187,6 +7205,12 @@ table.listTable table {
 }
 #globallinks #headerlanguages {
   padding-top: 6px;
+}
+#mainContentArea #hierarchy {
+  padding-top: 15px;
+}
+#mainContentArea #document-info {
+  padding-bottom: 30px;
 }
 .text-uppercase {
   font-size: 11px;
@@ -7297,7 +7321,8 @@ table.listTable table {
   border: 1px solid #a32929;
 }
 /* Font size for Hn is 1.1^(7-n) */
-h1 {
+h1,
+#document-title h1 {
   font-size: 2.15em;
 }
 h1,
