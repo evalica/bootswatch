@@ -1,9 +1,10 @@
 // Colibri 3.0.0
 // Colibri theme tries to mimic as much as it can the XWiki's Colibri skin 
+// Colibri particularities: Gradients for btn, navs and panels headings. Uppercase for btn, labels
 // Bootswatch: styles specific only to this theme that come on top of the default Bootstrap styles and XWiki mapping
 // -----------------------------------------------------
 
-// Mixins =====================================================================
+// Local Mixins ===============================================================
 
 .gradient-effect(@color) {
   #gradient > .vertical-three-colors(lighten(@color, 10%), @color, 90%, darken(@color, 2%));
@@ -37,7 +38,6 @@
     }
   }
 }
-
 
 // Navbar =====================================================================
 
@@ -112,7 +112,7 @@
 // Typography =================================================================
 
 /* Font size for Hn is 1.1^(7-n) */
-h1 {
+h1, #document-title h1 {
   font-size: 2.15em; // ~30.1px
 }
 
