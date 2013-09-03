@@ -2,7 +2,22 @@
 // XWiki-Layout: defines how main containers are arranged
 // ----------------------------------------------------------------------------
 
-// VIEW Layout ================================================================
+// Local Variables ============================================================
+
+@padding-grid-vertical:          @grid-gutter-width / 2;
+@padding-grid-horizontal:        @grid-gutter-width / 2;
+
+// Local Mixins ===============================================================
+
+.padding-grid { // Used to align to grid
+  padding: @padding-grid-vertical @padding-grid-horizontal;
+}
+
+.padding-container { // Used for layout containers
+  padding: @padding-grid-vertical @grid-gutter-width;
+}
+
+// Responsive VIEW Layout =====================================================
 
 #contentcontainer {
   &.content {
@@ -95,7 +110,7 @@
   }
 }
 
-// EDIT Layout ================================================================
+// Responsive EDIT Layout =====================================================
 
 #xwikieditor {
   position: relative;
@@ -117,17 +132,6 @@
 }
 
 // Paddings ===================================================================
-
-@padding-grid-vertical:          @grid-gutter-width / 2;
-@padding-grid-horizontal:        @grid-gutter-width / 2;
-
-.padding-grid { // Used to align to grid
-  padding: @padding-grid-vertical @padding-grid-horizontal;
-}
-
-.padding-container { // Used for layout containers
-  padding: @padding-grid-vertical @grid-gutter-width;
-}
 
 #contentcontainer, #edit {
   padding: @padding-grid-vertical 0; // The horizontal values are given by #contentcolumn, #leftPanels and #rightPanels
@@ -161,5 +165,15 @@
   }
   #headerlanguages {
     padding-top: @padding-base-vertical;
+  }
+}
+
+#mainContentArea {
+  #hierarchy {
+    padding-top: @padding-grid-vertical;
+  }
+
+  #document-info {
+    padding-bottom: 2 * @padding-grid-vertical;
   }
 }
