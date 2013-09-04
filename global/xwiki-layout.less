@@ -158,6 +158,31 @@
   }
 }
 
+// Responsive GENERIC Layout ==================================================
+
+#footerglobal {
+  &:extend(.col-xs-12);
+  &:extend(.col-sm-12);
+  &:extend(.col-md-12);
+  &:extend(.col-lg-12);
+
+  .hideleft & {
+    &:extend(.col-xs-12);
+    &:extend(.col-sm-12);
+    &:extend(.col-md-9);
+    &:extend(.col-lg-9);
+  }
+
+  .hideright & {
+    &:extend(.col-xs-12);
+    &:extend(.col-sm-12);
+    &:extend(.col-md-9);
+    &:extend(.col-md-offset-3);
+    &:extend(.col-lg-9);
+    &:extend(.col-lg-offset-3);
+  }
+}
+
 // Paddings ===================================================================
 
 #contentcontainer, #edit {
