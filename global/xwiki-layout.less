@@ -89,8 +89,18 @@
   }
 }
 
+/* Small devices (up to 991px) */
+@media (max-width: (@screen-md - 1px)) { 
+  #contentcontainer {
+    #leftPanels, #rightPanels {
+      padding-top: @line-height-computed;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md) {
-#contentcontainer {
+  #contentcontainer {
     position: relative;
     &.content {
       #leftPanels, #rightPanels {
@@ -112,8 +122,7 @@
 
 // Responsive EDIT Layout =====================================================
 
-#xwikieditor {
-  position: relative;
+#edit {
   .leftsidecolumns {
     &:extend(.col-xs-12);
     &:extend(.col-sm-12);
@@ -121,13 +130,31 @@
     &:extend(.col-lg-9);
   }
   #editPanels {
-    position: absolute;
     &:extend(.col-xs-12);
     &:extend(.col-sm-12);
     &:extend(.col-md-3);
     &:extend(.col-md-offset-9);
     &:extend(.col-lg-3);
     &:extend(.col-lg-offset-9);
+  }
+}
+
+/* Small devices (up to 991px) */
+@media (max-width: (@screen-md - 1px)) { 
+  #edit {
+    #editPanels {
+      padding-top: @line-height-computed;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md) {
+  #edit {
+    position: relative;
+    #editPanels {
+      position: absolute;
+    }
   }
 }
 
@@ -139,7 +166,7 @@
 }
 
 #footerglobal {
-  padding: 0 @padding-grid-horizontal; // Align with #contentcontainer grid columns
+  padding: 0 @padding-grid-horizontal @padding-grid-vertical; // Align with #contentcontainer grid columns
 }
 
 .xwikitabbar {

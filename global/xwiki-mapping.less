@@ -149,8 +149,11 @@ input[type="text"].empty {
   .pull-left;
 }
 
+.full:extend(.col-sm-12),
 .full:extend(.col-lg-12),
+.half:extend(.col-sm-12),
 .half:extend(.col-lg-6),
+.third:extend(.col-sm-12),
 .third:extend(.col-lg-4) {
   padding: 0;
 }
@@ -164,6 +167,9 @@ input[type="text"].empty {
 
 .panels .panel {
   border-color: @panel-default-border;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .xwikipaneltitle {
