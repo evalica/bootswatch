@@ -229,3 +229,33 @@
     padding-bottom: 2 * @padding-grid-vertical;
   }
 }
+
+// Responsive Applications ====================================================
+
+/* Small devices (up to tablets, 768px) */
+@media (max-width: @screen-sm) { 
+  .main { // Adding more specificity in order to have priority
+    .dashboard { // Dashboard
+      .container-columns .column { 
+        width: 100%;
+      }
+    }
+
+    #user-page-content, // User Profile
+    #admin-page-content { // Administration
+      float: left;
+      margin-left: auto;
+    }
+
+    .search { // Search 
+      &-form, &-facets {
+        width: 100%;
+        max-width: 100%;
+      }
+      &-results-left {
+        float: left;
+        margin: 0;
+      }
+    }
+  }
+}
