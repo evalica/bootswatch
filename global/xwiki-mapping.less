@@ -201,7 +201,7 @@ input[type="text"].empty {
 
 // ActionMenus ================================================================
 
-#mainmenu {
+#mainmenu { // Colors
   background-color: @navbar-inverse-bg;
   border-color: @navbar-inverse-border;
   color: @navbar-inverse-color;
@@ -221,7 +221,7 @@ input[type="text"].empty {
   }
 }
 
-.actionmenu {
+.actionmenu { // Colors
   background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
   color: @navbar-default-color;
@@ -236,6 +236,11 @@ input[type="text"].empty {
       color: @dropdown-link-color;
     }
   }
+}
+
+.actionmenu {
+  .clearfix;
+  display: block;
 }
 
 .tmetype {
