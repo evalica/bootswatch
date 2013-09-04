@@ -751,7 +751,10 @@ pre code {
 .col-lg-11,
 .col-lg-12,
 .full,
+.full,
 .half,
+.half,
+.third,
 .third,
 #contentcontainer.content #leftPanels,
 #contentcontainer.content #leftPanels,
@@ -785,14 +788,26 @@ pre code {
 #contentcontainer.contenthidelefthideright #contentcolumn,
 #contentcontainer.contenthidelefthideright #contentcolumn,
 #contentcontainer.contenthidelefthideright #contentcolumn,
-#xwikieditor .leftsidecolumns,
-#xwikieditor .leftsidecolumns,
-#xwikieditor .leftsidecolumns,
-#xwikieditor .leftsidecolumns,
-#xwikieditor #editPanels,
-#xwikieditor #editPanels,
-#xwikieditor #editPanels,
-#xwikieditor #editPanels,
+#edit .leftsidecolumns,
+#edit .leftsidecolumns,
+#edit .leftsidecolumns,
+#edit .leftsidecolumns,
+#edit #editPanels,
+#edit #editPanels,
+#edit #editPanels,
+#edit #editPanels,
+#footerglobal,
+#footerglobal,
+#footerglobal,
+#footerglobal,
+.hideleft #footerglobal,
+.hideleft #footerglobal,
+.hideleft #footerglobal,
+.hideleft #footerglobal,
+.hideright #footerglobal,
+.hideright #footerglobal,
+.hideright #footerglobal,
+.hideright #footerglobal,
 #globallinks,
 #globallinks {
   position: relative;
@@ -855,8 +870,11 @@ pre code {
 #contentcontainer.contenthideright #leftPanels,
 #contentcontainer.contenthideright #contentcolumn,
 #contentcontainer.contenthidelefthideright #contentcolumn,
-#xwikieditor .leftsidecolumns,
-#xwikieditor #editPanels {
+#edit .leftsidecolumns,
+#edit #editPanels,
+#footerglobal,
+.hideleft #footerglobal,
+.hideright #footerglobal {
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -910,6 +928,9 @@ pre code {
     width: 91.66666666666666%;
   }
   .col-sm-12,
+  .full,
+  .half,
+  .third,
   #contentcontainer.content #leftPanels,
   #contentcontainer.content #contentcolumn,
   #contentcontainer.content #rightPanels,
@@ -918,8 +939,11 @@ pre code {
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
   #contentcontainer.contenthidelefthideright #contentcolumn,
-  #xwikieditor .leftsidecolumns,
-  #xwikieditor #editPanels {
+  #edit .leftsidecolumns,
+  #edit #editPanels,
+  #footerglobal,
+  .hideleft #footerglobal,
+  .hideright #footerglobal {
     width: 100%;
   }
   .col-sm-push-1 {
@@ -1044,8 +1068,10 @@ pre code {
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
-  #xwikieditor .leftsidecolumns,
-  #xwikieditor #editPanels,
+  #edit .leftsidecolumns,
+  #edit #editPanels,
+  .hideleft #footerglobal,
+  .hideright #footerglobal,
   #globallinks {
     float: left;
   }
@@ -1060,7 +1086,7 @@ pre code {
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #xwikieditor #editPanels,
+  #edit #editPanels,
   #globallinks {
     width: 25%;
   }
@@ -1083,7 +1109,9 @@ pre code {
   .col-md-9,
   #contentcontainer.contenthideleft #contentcolumn,
   #contentcontainer.contenthideright #contentcolumn,
-  #xwikieditor .leftsidecolumns {
+  #edit .leftsidecolumns,
+  .hideleft #footerglobal,
+  .hideright #footerglobal {
     width: 75%;
   }
   .col-md-10 {
@@ -1093,7 +1121,8 @@ pre code {
     width: 91.66666666666666%;
   }
   .col-md-12,
-  #contentcontainer.contenthidelefthideright #contentcolumn {
+  #contentcontainer.contenthidelefthideright #contentcolumn,
+  #footerglobal {
     width: 100%;
   }
   .col-md-push-0 {
@@ -1179,7 +1208,8 @@ pre code {
   }
   .col-md-offset-3,
   #contentcontainer.content #contentcolumn,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  .hideright #footerglobal {
     margin-left: 25%;
   }
   .col-md-offset-4 {
@@ -1200,7 +1230,7 @@ pre code {
   .col-md-offset-9,
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
-  #xwikieditor #editPanels {
+  #edit #editPanels {
     margin-left: 75%;
   }
   .col-md-offset-10 {
@@ -1234,8 +1264,10 @@ pre code {
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
   #contentcontainer.contenthideright #contentcolumn,
-  #xwikieditor .leftsidecolumns,
-  #xwikieditor #editPanels,
+  #edit .leftsidecolumns,
+  #edit #editPanels,
+  .hideleft #footerglobal,
+  .hideright #footerglobal,
   #globallinks {
     float: left;
   }
@@ -1250,7 +1282,7 @@ pre code {
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
   #contentcontainer.contenthideright #leftPanels,
-  #xwikieditor #editPanels,
+  #edit #editPanels,
   #globallinks {
     width: 25%;
   }
@@ -1275,7 +1307,9 @@ pre code {
   .col-lg-9,
   #contentcontainer.contenthideleft #contentcolumn,
   #contentcontainer.contenthideright #contentcolumn,
-  #xwikieditor .leftsidecolumns {
+  #edit .leftsidecolumns,
+  .hideleft #footerglobal,
+  .hideright #footerglobal {
     width: 75%;
   }
   .col-lg-10 {
@@ -1286,7 +1320,8 @@ pre code {
   }
   .col-lg-12,
   .full,
-  #contentcontainer.contenthidelefthideright #contentcolumn {
+  #contentcontainer.contenthidelefthideright #contentcolumn,
+  #footerglobal {
     width: 100%;
   }
   .col-lg-push-0 {
@@ -1372,7 +1407,8 @@ pre code {
   }
   .col-lg-offset-3,
   #contentcontainer.content #contentcolumn,
-  #contentcontainer.contenthideright #contentcolumn {
+  #contentcontainer.contenthideright #contentcolumn,
+  .hideright #footerglobal {
     margin-left: 25%;
   }
   .col-lg-offset-4 {
@@ -1393,7 +1429,7 @@ pre code {
   .col-lg-offset-9,
   #contentcontainer.content #rightPanels,
   #contentcontainer.contenthideleft #rightPanels,
-  #xwikieditor #editPanels {
+  #edit #editPanels {
     margin-left: 75%;
   }
   .col-lg-offset-10 {
@@ -6816,7 +6852,10 @@ input[type="text"].empty {
   float: left !important;
 }
 .full,
+.full,
 .half,
+.half,
+.third,
 .third {
   padding: 0;
 }
@@ -6828,6 +6867,9 @@ input[type="text"].empty {
 }
 .panels .panel {
   border-color: #e8e8e8;
+}
+.panels .panel:last-of-type {
+  margin-bottom: 0;
 }
 .xwikipaneltitle {
   margin-top: 0;
@@ -7050,6 +7092,33 @@ input[type="text"].empty {
 }
 .actionmenu .submenu a {
   color: #636b75;
+}
+.actionmenu {
+  display: block;
+}
+.actionmenu:before,
+.actionmenu:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.actionmenu:after {
+  clear: both;
+}
+.actionmenu:before,
+.actionmenu:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.actionmenu:after {
+  clear: both;
 }
 .tmetype {
   color: #4d5860;
@@ -7308,6 +7377,14 @@ table.listTable table {
 .padding-container {
   padding: 15px 30px;
 }
+/* Small devices (up to 991px) */
+@media (max-width: 991px) {
+  #contentcontainer #leftPanels,
+  #contentcontainer #rightPanels {
+    padding-top: 20px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #contentcontainer {
     position: relative;
@@ -7323,11 +7400,20 @@ table.listTable table {
     position: absolute;
   }
 }
-#xwikieditor {
-  position: relative;
+/* Small devices (up to 991px) */
+@media (max-width: 991px) {
+  #edit #editPanels {
+    padding-top: 20px;
+  }
 }
-#xwikieditor #editPanels {
-  position: absolute;
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #edit {
+    position: relative;
+  }
+  #edit #editPanels {
+    position: absolute;
+  }
 }
 #contentcontainer,
 #edit {
@@ -7335,7 +7421,7 @@ table.listTable table {
   margin: 0 -15px;
 }
 #footerglobal {
-  padding: 0 15px;
+  padding: 0 15px 15px;
 }
 .xwikitabbar {
   padding-left: 15px;
@@ -7363,6 +7449,26 @@ table.listTable table {
 }
 #mainContentArea #document-info {
   padding-bottom: 30px;
+}
+/* Small devices (up to tablets, 768px) */
+@media (max-width: 768px) {
+  .main .dashboard .container-columns .column {
+    width: 100%;
+  }
+  .main #user-page-content,
+  .main #admin-page-content {
+    float: left;
+    margin-left: auto;
+  }
+  .main .search-form,
+  .main .search-facets {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .search-results-left {
+    float: left;
+    margin: 0;
+  }
 }
 .text-uppercase {
   font-size: 11px;
