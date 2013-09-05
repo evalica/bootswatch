@@ -4171,7 +4171,7 @@ textarea.input-group-sm > input[type="password"] {
 }
 .navbar-default {
   background-color: #e1e1e1;
-  border-color: #d0d0d0;
+  border-color: #e8e8e8;
 }
 .navbar-default .navbar-brand {
   color: #4d5860;
@@ -7059,41 +7059,10 @@ input[type="text"].empty {
 .language-current[href]:focus {
   background-color: #195784;
 }
-#mainmenu {
-  background-color: #0272a6;
-  border-color: #014f74;
-  color: #f3f3f3;
-}
-#mainmenu .tmetype {
-  color: #f3f3f3;
-}
-#mainmenu.actionmenu a {
-  color: #f3f3f3;
-}
-#mainmenu.actionmenu .submenu a {
-  color: #636b75;
-}
-#mainmenu .menuarrow {
-  border-top-color: #f3f3f3;
-}
 .actionmenu {
-  background-color: #e1e1e1;
-  border-color: #d0d0d0;
-  color: #4d5860;
-}
-.actionmenu a {
-  color: #4d5860;
-}
-.actionmenu .submenu {
-  background-color: #ffffff;
-  border: 1px solid #e8e8e8;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
-.actionmenu .submenu a {
-  color: #636b75;
-}
-.actionmenu {
+  border: 1px solid transparent;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   display: block;
 }
 .actionmenu:before,
@@ -7119,6 +7088,59 @@ input[type="text"].empty {
 }
 .actionmenu:after {
   clear: both;
+}
+.actionmenu .submenu,
+.actionmenu .topmenuentry {
+  padding: 5px 10px;
+}
+.actionmenu .topmenuentry.hasIcon {
+  padding-left: 20px;
+}
+.actionmenu .submenuitem a {
+  padding: 3px 10px 3px 20px;
+}
+.actionmenu .leftmenu {
+  padding-left: 30px;
+}
+.actionmenu .rightmenu {
+  padding-right: 20px;
+}
+#mainmenu {
+  background-color: #0272a6;
+  border-color: #014f74;
+  color: #f3f3f3;
+}
+#mainmenu .rightmenu {
+  padding-right: 5px;
+}
+#mainmenu .tmetype {
+  color: #f3f3f3;
+}
+#mainmenu.actionmenu a {
+  color: #f3f3f3;
+}
+#mainmenu.actionmenu .submenu a {
+  color: #636b75;
+}
+#mainmenu .menuarrow {
+  border-top-color: #f3f3f3;
+}
+.actionmenu {
+  background-color: #e1e1e1;
+  border-color: #e8e8e8;
+  color: #4d5860;
+}
+.actionmenu a {
+  color: #4d5860;
+}
+.actionmenu .submenu {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.actionmenu .submenu a {
+  color: #636b75;
 }
 .tmetype {
   color: #4d5860;
@@ -7684,7 +7706,9 @@ form label,
 #footerglobal,
 .accordionTabTitleBar h1,
 .xwikipaneltitle,
-.vertical-menu .group {
+.vertical-menu .group,
+.actionmenu a,
+.tmetype {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7694,6 +7718,14 @@ form label,
 }
 form label span {
   text-transform: none;
+}
+.actionmenu .submenuitem a,
+.actionmenu a.hastype {
+  font-weight: 400;
+  text-transform: none;
+}
+.actionmenu a.hastype strong {
+  font-weight: 400;
 }
 .clearfix:before,
 .clearfix:after,
