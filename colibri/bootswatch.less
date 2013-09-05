@@ -197,7 +197,8 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 #footerglobal, // Footer
 .accordionTabTitleBar h1, // Panel Wizard
 .xwikipaneltitle, // Panel Title
-.vertical-menu .group // Vertical headers
+.vertical-menu .group, // Vertical headers
+.actionmenu a, .tmetype // Action Menu
 { 
   .text-uppercase;
 }
@@ -208,4 +209,14 @@ form label, // All form labels are uppercase, some labels (ex. SendMessage) are 
 
 form label span {
   text-transform: none; // Fixing after uppercase (ex. xRequired)
+}
+
+.actionmenu { // Action Menu
+  .submenuitem a, a.hastype {
+    font-weight: 400;
+    text-transform: none;
+  }
+  a.hastype strong {
+    font-weight: 400;
+  }
 }
