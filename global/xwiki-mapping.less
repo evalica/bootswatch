@@ -207,10 +207,35 @@ input[type="text"].empty {
 
 // ActionMenus ================================================================
 
+.actionmenu {
+  .clearfix;
+  border: 1px solid transparent;
+  .border-top-radius(@navbar-border-radius);
+  display: block;
+  .submenu, .topmenuentry {
+    padding: 5px 10px;
+  }
+  .topmenuentry.hasIcon {
+    padding-left: 20px;
+  }
+  .submenuitem a {
+    padding: 3px 10px 3px 20px; 
+  }
+  .leftmenu {
+    padding-left: @grid-gutter-width; // Align with the grid
+  }
+  .rightmenu {
+    padding-right: (@grid-gutter-width - 10px); // Align with the grid, Reduce the entry padding
+  }
+}
+
 #mainmenu { // Colors
   background-color: @navbar-inverse-bg;
   border-color: @navbar-inverse-border;
   color: @navbar-inverse-color;
+  .rightmenu {
+    padding-right: (@grid-gutter-width / 2 - 10px); // Align with the panel, Reduce the entry padding
+  }
   .tmetype {
     color: @navbar-inverse-link-color;
   }
@@ -242,11 +267,6 @@ input[type="text"].empty {
       color: @dropdown-link-color;
     }
   }
-}
-
-.actionmenu {
-  .clearfix;
-  display: block;
 }
 
 .tmetype {
