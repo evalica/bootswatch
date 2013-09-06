@@ -4,6 +4,8 @@
 // Bootswatch: styles specific only to this theme that come on top of the default Bootstrap styles and XWiki mapping
 // -----------------------------------------------------
 
+@import "xwiki-layout.less";
+
 // Local Mixins ===============================================================
 
 .gradient-effect(@color) {
@@ -166,6 +168,7 @@ h1, h2, h3, h4 , h5, h6 {
 // Action Menus ===============================================================
 
 .actionmenu {
+  .border-bottom-radius(0);
   .gradient-effect(@navbar-default-bg);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }

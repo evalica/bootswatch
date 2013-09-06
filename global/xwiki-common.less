@@ -8,14 +8,6 @@
 
 // Local Mixins ===============================================================
 
-.border-top-width(@width) {
-  border-width: @width @width 0;
-}
-
-.border-bottom-width(@width) {
-  border-width: 0 @width @width;
-}
-
 .text-smaller {
   font-size: floor(@font-size-base * 0.9);
 }
@@ -53,17 +45,6 @@ ul.xlist li.create a {
 
 // Borders ====================================================================
 
-#mainContentArea, #mainEditArea,
-#xdocFooter,
-#docextrapanes {
-  border: @border-width solid @nav-tabs-border-color;
-}
-
-#docextrapanes, #xdocFooter {
-  .border-bottom-width(@border-width);
-}
-
-#docextrapanes, #xdocFooter, 
 .actionmenu .submenu {
   .border-bottom-radius(@border-radius-base);
 }

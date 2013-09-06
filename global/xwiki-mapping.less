@@ -210,7 +210,6 @@ input[type="text"].empty {
 .actionmenu {
   .clearfix;
   border: 1px solid transparent;
-  .border-top-radius(@navbar-border-radius);
   display: block;
   .submenu, .topmenuentry {
     padding: 5px 10px;
@@ -226,6 +225,9 @@ input[type="text"].empty {
   }
   .rightmenu {
     padding-right: (@grid-gutter-width - 10px); // Align with the grid, Reduce the entry padding
+  }
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: @navbar-border-radius;
   }
 }
 

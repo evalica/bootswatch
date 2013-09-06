@@ -1,0 +1,32 @@
+// Colibri 3.0.0
+// This file contains values and classes specific to XWiki (http://www.xwiki.org)
+// XWiki-Layout: defines how main containers are arranged
+// ----------------------------------------------------------------------------
+
+// Borders ====================================================================
+
+#mainContentArea, #mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  border: @border-width solid @nav-tabs-border-color;
+}
+
+#docextrapanes, #xdocFooter {
+  border-width: 0 @border-width @border-width;
+}
+
+#docextrapanes, #xdocFooter {
+  .border-bottom-radius(@border-radius-base);
+}
+
+// Paddings ===================================================================
+
+#mainContentArea, #mainEditArea,
+#xdocFooter,
+#docextrapanes {
+  .padding-container;
+}
+
+.xwikitabbar {
+  padding-left: @padding-grid-horizontal; // Leave a left space before displaying the tabs
+}
