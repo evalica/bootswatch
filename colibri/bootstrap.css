@@ -1870,7 +1870,9 @@ textareainput[type="password"] {
   margin-bottom: 15px;
 }
 .radio,
-.checkbox {
+.checkbox,
+input[type="radio"],
+input[type="checkbox"] {
   display: block;
   min-height: 20px;
   margin-top: 10px;
@@ -1879,7 +1881,9 @@ textareainput[type="password"] {
   vertical-align: middle;
 }
 .radio label,
-.checkbox label {
+.checkbox label,
+input[type="radio"] label,
+input[type="checkbox"] label {
   display: inline;
   margin-bottom: 0;
   font-weight: normal;
@@ -1895,13 +1899,13 @@ input[type="checkbox"] input[type="checkbox"] {
   margin-left: -20px;
 }
 .radio + .radio,
-.checkbox + .checkbox {
+.checkbox + .checkbox,
+input[type="radio"] + input[type="radio"],
+input[type="checkbox"] + input[type="checkbox"] {
   margin-top: -5px;
 }
 .radio-inline,
-.checkbox-inline,
-input[type="radio"],
-input[type="checkbox"] {
+.checkbox-inline {
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -1910,9 +1914,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 .radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline,
-input[type="radio"] + input[type="radio"],
-input[type="checkbox"] + input[type="checkbox"] {
+.checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
 }
@@ -2067,14 +2069,18 @@ textarea.input-lg {
     display: inline-block;
   }
   .form-inline .radio,
-  .form-inline .checkbox {
+  .form-inline .checkbox,
+  .form-inline input[type="radio"],
+  .form-inline input[type="checkbox"] {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
   }
   .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
+  .form-inline .checkbox input[type="checkbox"],
+  .form-inline input[type="radio"] input[type="radio"],
+  .form-inline input[type="checkbox"] input[type="checkbox"] {
     float: none;
     margin-left: 0;
   }
@@ -4126,14 +4132,18 @@ textarea.input-group-sm > input[type="password"] {
     display: inline-block;
   }
   .navbar-form .radio,
-  .navbar-form .checkbox {
+  .navbar-form .checkbox,
+  .navbar-form input[type="radio"],
+  .navbar-form input[type="checkbox"] {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
   }
   .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
+  .navbar-form .checkbox input[type="checkbox"],
+  .navbar-form input[type="radio"] input[type="radio"],
+  .navbar-form input[type="checkbox"] input[type="checkbox"] {
     float: none;
     margin-left: 0;
   }
@@ -6816,6 +6826,12 @@ textareainput[type="text"].input-lg,
 textareainput[type="password"].input-lg {
   height: auto;
 }
+input[type="radio"] {
+  display: inline-block;
+}
+input[type="checkbox"] {
+  display: inline-block;
+}
 textarea {
   height: auto;
   max-width: 100%;
@@ -7371,6 +7387,19 @@ ul.xlist li.create a {
 .accordionTabTitleBar h1 {
   font-size: 14px;
 }
+#xwikidoctitleinput {
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 36px;
+  font-size: 24.78px;
+  height: auto;
+}
+#xwikidoctitleinput small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9f9f9f;
+}
 .label label {
   color: #636b75;
 }
@@ -7400,6 +7429,9 @@ table.listTable table {
 }
 #panelEditorSteps.xwikitabbar:after {
   clear: none;
+}
+.editor-wysiwyg #titleinput {
+  padding-bottom: 15px;
 }
 .padding-grid {
   padding: 15px 15px;
@@ -7446,7 +7478,7 @@ table.listTable table {
   }
 }
 #contentcontainer,
-#edit {
+#xwikieditor {
   padding: 15px 0;
 }
 #footerglobal {
@@ -7468,7 +7500,8 @@ table.listTable table {
 #globallinks #headerlanguages {
   padding-top: 6px;
 }
-#mainContentArea #hierarchy {
+#mainContentArea #hierarchy,
+#mainEditArea #hierarchy {
   padding-top: 15px;
 }
 #mainContentArea #document-info {
