@@ -100,9 +100,13 @@ select.input-lg, input[type="text"].input-lg, input[type="password"].input-lg {
   .input-lg;
 }
 
-input[type="radio"]:extend(.radio-inline all) {}
+input[type="radio"]:extend(.radio all) {
+  display: inline-block;
+}
 
-input[type="checkbox"]:extend(.checkbox-inline all) {}
+input[type="checkbox"]:extend(.checkbox all) {
+  display: inline-block;
+}
 
 textarea {
   height: auto;
