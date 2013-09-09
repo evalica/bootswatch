@@ -1,0 +1,31 @@
+// Blueberry 3.0.0
+// This file contains values and classes specific to XWiki (http://www.xwiki.org)
+// XWiki-Layout: defines how main containers are arranged
+// ----------------------------------------------------------------------------
+
+// Local Variables ============================================================
+
+@layout-header-color:   @theme-pageHeaderBackgroundColor;
+
+// Local Mixins ===============================================================
+
+.full-width(@color){
+  box-shadow: -42rem 0 0 @color, 42rem 0 0 @color; 
+}
+
+// Containers =================================================================
+
+#xwikimaincontainer:extend(.container all) {}
+
+#menuview, #mainmenu {
+  .full-width(@navbar-inverse-bg);
+}
+
+#headerglobal, #footerglobal {
+  .full-width(@layout-header-color);
+  background-color: @layout-header-color;
+}
+
+#footerglobal {
+  padding: @padding-grid-horizontal @padding-grid-vertical;
+}

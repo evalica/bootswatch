@@ -3,7 +3,13 @@
 // Bootswatch: styles specific only to this theme that come on top of the default Bootstrap styles and XWiki mapping
 // -----------------------------------------------------
 
+@import "xwiki-layout.less";
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+// Local Variables ============================================================
+
+@contentmenu-margin:   10px;
 
 // Navbar =====================================================================
 
@@ -11,8 +17,14 @@
 
 // Typography =================================================================
 
-h1, h2, h3, h4 , h5, h6 {
+h1, h2, h3, h4 , h5, h6, 
+#xwikidoctitleinput {
   color: @theme-titleColor;
+  .main &, 
+  .editor & {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+  }
 }
 
 // Tables =====================================================================
@@ -26,3 +38,43 @@ h1, h2, h3, h4 , h5, h6 {
 // Progress bars ==============================================================
 
 // Containers =================================================================
+
+// Action Menus ===============================================================
+
+.actionmenu {
+  strong {
+  font-weight: 400;
+  }
+  .leftmenu, .rightmenu {
+    padding: 0;
+  }
+}
+
+#mainmenu {
+  border: none;
+  border-radius: 0;
+  .leftmenu {
+    padding-left: (@contentmenu-margin + (@grid-gutter-width / 2));
+  }
+}
+
+#contentmenu, #editmenu {
+  border: none;
+  .topmenuentry {
+    .btn;
+    .btn-default;
+    margin-right: (@contentmenu-margin / 2);
+    text-align: left;
+    &:hover {
+      .border-bottom-radius(0);
+      border-bottom-color: transparent;
+    }
+    &.hasIcon {
+      background-position: @contentmenu-margin 50%;
+      padding-left: (@contentmenu-margin + 20px); // Size of the icon
+    }
+  }
+  .submenu {
+    margin-left: @contentmenu-margin;
+  }
+}
