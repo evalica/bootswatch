@@ -169,7 +169,7 @@
 
 // Paddings ===================================================================
 
-#contentcontainer, #edit {
+#contentcontainer, #xwikieditor {
   padding: @padding-grid-vertical 0; // The horizontal values are given by #contentcolumn, #leftPanels and #rightPanels
 }
 
@@ -197,14 +197,14 @@
   }
 }
 
-#mainContentArea {
+#mainContentArea, #mainEditArea {
   #hierarchy {
     padding-top: @padding-grid-vertical;
   }
+}
 
-  #document-info {
-    padding-bottom: 2 * @padding-grid-vertical;
-  }
+#mainContentArea #document-info {
+  padding-bottom: 2 * @padding-grid-vertical;
 }
 
 // Responsive Applications ====================================================
