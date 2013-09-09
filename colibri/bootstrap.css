@@ -644,14 +644,17 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
+.container,
+#xwikimaincontainer {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 .container:before,
-.container:after {
+.container:after,
+#xwikimaincontainer:before,
+#xwikimaincontainer:after {
   content: " ";
   /* 1 */
 
@@ -659,11 +662,14 @@ pre code {
   /* 2 */
 
 }
-.container:after {
+.container:after,
+#xwikimaincontainer:after {
   clear: both;
 }
 .container:before,
-.container:after {
+.container:after,
+#xwikimaincontainer:before,
+#xwikimaincontainer:after {
   content: " ";
   /* 1 */
 
@@ -671,7 +677,8 @@ pre code {
   /* 2 */
 
 }
-.container:after {
+.container:after,
+#xwikimaincontainer:after {
   clear: both;
 }
 .row {
@@ -878,7 +885,8 @@ pre code {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .container {
+  .container,
+  #xwikimaincontainer {
     max-width: 750px;
   }
   .col-sm-1,
@@ -1047,7 +1055,8 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container,
+  #xwikimaincontainer {
     max-width: 970px;
   }
   .col-md-1,
@@ -1241,7 +1250,8 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  #xwikimaincontainer {
     max-width: 1170px;
   }
   .col-lg-1,
@@ -3955,13 +3965,17 @@ textarea.input-group-sm > input[type="password"] {
   }
 }
 .container > .navbar-header,
-.container > .navbar-collapse {
+.container > .navbar-collapse,
+#xwikimaincontainer > .navbar-header,
+#xwikimaincontainer > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
-  .container > .navbar-collapse {
+  .container > .navbar-collapse,
+  #xwikimaincontainer > .navbar-header,
+  #xwikimaincontainer > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -4006,7 +4020,8 @@ textarea.input-group-sm > input[type="password"] {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand {
+  .navbar > .container .navbar-brand,
+  .navbar > #xwikimaincontainer .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -4649,7 +4664,8 @@ a.list-group-item.active > .badge,
 .jumbotron p {
   line-height: 1.4;
 }
-.container .jumbotron {
+.container .jumbotron,
+#xwikimaincontainer .jumbotron {
   border-radius: 6px;
 }
 @media screen and (min-width: 768px) {
@@ -4657,7 +4673,8 @@ a.list-group-item.active > .badge,
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron {
+  .container .jumbotron,
+  #xwikimaincontainer .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
