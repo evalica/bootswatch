@@ -100,12 +100,10 @@ select.input-lg, input[type="text"].input-lg, input[type="password"].input-lg {
   .input-lg;
 }
 
-input[type="radio"]:extend(.radio all) {
-  display: inline-block;
-}
-
+input[type="radio"]:extend(.radio all), 
 input[type="checkbox"]:extend(.checkbox all) {
   display: inline-block;
+  margin-right: (@padding-base-horizontal / 2);
 }
 
 textarea {
