@@ -6531,6 +6531,7 @@ fieldset.xwikimessage blockquote {
 input.button,
 .buttonwrapper button,
 .buttonwrapper a {
+  background-image: none;
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -6826,11 +6827,10 @@ textareainput[type="text"].input-lg,
 textareainput[type="password"].input-lg {
   height: auto;
 }
-input[type="radio"] {
-  display: inline-block;
-}
+input[type="radio"],
 input[type="checkbox"] {
   display: inline-block;
+  margin-right: 6px;
 }
 textarea {
   height: auto;
@@ -7707,6 +7707,9 @@ table th {
 }
 #body {
   background-color: #f5f5f5;
+}
+#footerglobal {
+  text-align: center;
 }
 .panel-title {
   border: none;
