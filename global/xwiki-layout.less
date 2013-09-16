@@ -25,23 +25,23 @@
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-3);
+      &:extend(.col-md-pull-6);
       &:extend(.col-lg-3);
+      &:extend(.col-lg-pull-6);
     }
     #contentcolumn {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-6);
-      &:extend(.col-md-offset-3);
+      &:extend(.col-md-push-3);
       &:extend(.col-lg-6);
-      &:extend(.col-lg-offset-3);
+      &:extend(.col-lg-push-3);
     }
     #rightPanels {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-3);
-      &:extend(.col-md-offset-9);
       &:extend(.col-lg-3);
-      &:extend(.col-lg-offset-9);
     }
   }
 
@@ -56,9 +56,7 @@
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-3);
-      &:extend(.col-md-offset-9);
       &:extend(.col-lg-3);
-      &:extend(.col-lg-offset-9);
     }
   }
 
@@ -67,15 +65,17 @@
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-3);
+      &:extend(.col-md-pull-9);
       &:extend(.col-lg-3);
+      &:extend(.col-lg-pull-9);
     }
     #contentcolumn {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-9);
-      &:extend(.col-md-offset-3);
+      &:extend(.col-md-push-3);
       &:extend(.col-lg-9);
-      &:extend(.col-lg-offset-3);
+      &:extend(.col-lg-push-3);
     }
   }
 
@@ -98,28 +98,6 @@
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md) {
-  #contentcontainer {
-    position: relative;
-    &.content {
-      #leftPanels, #rightPanels {
-        position: absolute;
-      }
-    }
-    &.contenthideleft {
-      #rightPanels {
-        position: absolute;
-      }
-    }
-    &.contenthideright {
-      #leftPanels {
-        position: absolute;
-      }
-    }
-  }
-}
-
 // Responsive EDIT Layout =====================================================
 
 #edit {
@@ -133,9 +111,7 @@
     &:extend(.col-xs-12);
     &:extend(.col-sm-12);
     &:extend(.col-md-3);
-    &:extend(.col-md-offset-9);
     &:extend(.col-lg-3);
-    &:extend(.col-lg-offset-9);
   }
 }
 
@@ -144,16 +120,6 @@
   #edit {
     #editPanels {
       padding-top: @line-height-computed;
-    }
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md) {
-  #edit {
-    position: relative;
-    #editPanels {
-      position: absolute;
     }
   }
 }
