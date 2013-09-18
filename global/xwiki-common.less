@@ -129,3 +129,8 @@ table {
     }
   }
 }
+
+// FIX: History Table
+.xwikidatatable .row:after, .xwikidatatable .row:before { // PROBLEM: Usage of a class with meaning inside Bootstrap
+  display: none;
+}
