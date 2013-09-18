@@ -6,15 +6,18 @@
 // Global
 // -------------------------
 
+@theme-pageContentBackgroundColor:     #FFFFFF;
+@theme-backgroundSecondaryColor:       #F3F3F3;
+
 @theme-textColor:                      #172A3D;
 @theme-linkColor:                      #678fb5;
 @theme-highlightColor:                 @theme-backgroundSecondaryColor;
 
-@theme-menuBackgroundColor:            #172A3D;
-@theme-menuLinkColor:                  #ffffff;
+@theme-menuBackgroundColor:            @theme-textColor;
+@theme-menuLinkColor:                  @theme-pageContentBackgroundColor;
 
-@theme-menuContentBackgroundColor:     #ffffff;
-@theme-menuContentLinkColor:           #172A3D;
+@theme-menuContentBackgroundColor:     @theme-pageContentBackgroundColor;
+@theme-menuContentLinkColor:           @theme-textColor;
 
 @theme-buttonPrimaryBackgroundColor:   @theme-menuBackgroundColor;
 @theme-buttonPrimaryTextColor:         @theme-menuLinkColor;
@@ -22,7 +25,7 @@
 @theme-buttonSecondaryBackgroundColor: @theme-backgroundSecondaryColor;
 @theme-buttonSecondaryTextColor:       @theme-textColor;
 
-@theme-panelHeaderBackgroundColor:     #FFFFFF;
+@theme-panelHeaderBackgroundColor:     @theme-pageContentBackgroundColor;
 @theme-panelHeaderTextColor:           @theme-titleColor;
 
 // Local
