@@ -6788,7 +6788,7 @@ fieldset[disabled] .buttonwrapper a.secondary.active {
   border-color: #e1e1e1;
 }
 .buttonwrapper a {
-  display: inline;
+  display: inline-block;
 }
 textarea,
 select,
@@ -7447,7 +7447,8 @@ table.listTable table {
 .xwiki-livetable .pagesizeselect {
   height: auto;
 }
-.xwiki-livetable .pagination {
+.xwiki-livetable .pagination,
+.paginationFilter .pagination {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -7462,6 +7463,20 @@ table.listTable table {
 .gwt-PopupPanel table td {
   padding: 0;
   border-top: 0;
+}
+.xwikidatatable .row:after,
+.xwikidatatable .row:before {
+  display: none;
+}
+.user-page-pane .label {
+  display: inherit;
+  font-size: inherit;
+  padding: inherit;
+  text-align: inherit;
+}
+.entry-footer address {
+  display: inline;
+  margin: 0;
 }
 .padding-grid {
   padding: 15px 15px;
