@@ -76,14 +76,16 @@ ul.xlist li.create a {
 
 // Bugs =======================================================================
 
+// FIX: AllDocs: Tree 
 table {
-  &.listTable table { // FIX: AllDocs: Tree
+  &.listTable table { // PROBLEM: General styling reset
     width: auto;
   }
 }
 
+// FIX: Administration: Panel Wizard
 .xwikitabbar {
-  #panelEditorSteps& { // FIX: Administration: Panel Wizard
+  #panelEditorSteps& { // PROBLEM: Mapping and usage
     &>li { 
       float: none;
       display: inline-block;
@@ -94,27 +96,30 @@ table {
   }
 }
 
-.editor-wysiwyg #titleinput { // FIX: Editor
+// FIX: Editor
+.editor-wysiwyg #titleinput { // IMPROVEMENT: Better spacing
   padding-bottom: @padding-grid-vertical;
 }
 
-.xwiki-livetable { // FIX: Livetables
-  .pagesizeselect {
+// FIX: Livetables
+.xwiki-livetable {
+  .pagesizeselect { // PROBLEM: General styling reset
     height: auto;
   }
-  .pagination { 
+  .pagination { // PROBLEM: Usage of a class with meaning inside Bootstrap
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
-.gwt-MenuBar-horizontal { // FIX: WYSIWYG
+// FIX: WYSIWYG
+.gwt-MenuBar-horizontal { // PROBLEM: General styling reset
   table {
     width: auto; 
   }
 }
 
-.gwt-MenuBarPopup, // FIX: WYSIWYG
+.gwt-MenuBarPopup, // PROBLEM: General styling reset
 .gwt-PopupPanel {
   & table { 
     margin-bottom: 0;
