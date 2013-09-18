@@ -7382,6 +7382,7 @@ a.vertical-menu ul li ul li:focus {
 }
 #hierarchy,
 #document-info,
+#xdocFooter,
 #historyform td,
 #changes-info {
   color: #9f9f9f;
@@ -7442,6 +7443,25 @@ table.listTable table {
 }
 .editor-wysiwyg #titleinput {
   padding-bottom: 15px;
+}
+.xwiki-livetable .pagesizeselect {
+  height: auto;
+}
+.xwiki-livetable .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gwt-MenuBar-horizontal table {
+  width: auto;
+}
+.gwt-MenuBarPopup table,
+.gwt-PopupPanel table {
+  margin-bottom: 0;
+}
+.gwt-MenuBarPopup table td,
+.gwt-PopupPanel table td {
+  padding: 0;
+  border-top: 0;
 }
 .padding-grid {
   padding: 15px 15px;
