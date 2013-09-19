@@ -6253,7 +6253,8 @@ td.visible-print {
 span.successmessage,
 span.errormessage,
 span.warningmessage,
-span.infomessage {
+span.infomessage,
+span.box {
   padding: 2px;
 }
 .box,
@@ -7354,17 +7355,6 @@ table.listTable table {
 #footerglobal {
   padding: 15px 15px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#xwikidoctitleinput {
-  color: #182e43;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 300;
-}
 .panels .panel {
   border: 0;
   box-shadow: none;
@@ -7457,6 +7447,17 @@ h6,
     background-image: radial-gradient(farthest-side at right top, #e8e8e8, rgba(255, 255, 255, 0));
     margin-right: -14px;
   }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#xwikidoctitleinput {
+  color: #182e43;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
 }
 #footerglobal {
   text-align: left;

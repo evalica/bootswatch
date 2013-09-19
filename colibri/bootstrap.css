@@ -6428,7 +6428,8 @@ td.visible-print {
 span.successmessage,
 span.errormessage,
 span.warningmessage,
-span.infomessage {
+span.infomessage,
+span.box {
   padding: 2px;
 }
 .box,
