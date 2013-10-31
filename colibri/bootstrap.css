@@ -803,12 +803,12 @@ pre code {
 #edit #editPanels,
 #edit #editPanels,
 #edit #editPanels,
-#footerglobal,
-#footerglobal,
-#footerglobal,
-#footerglobal,
 #globallinks,
 #globallinks,
+#footerglobal,
+#footerglobal,
+#footerglobal,
+#footerglobal,
 .editbody #footerglobal,
 .editbody #footerglobal,
 .editbody #footerglobal,
@@ -7479,6 +7479,12 @@ table.listTable table {
   display: inline;
   margin: 0;
 }
+.calendar_date_select div.cds_header select.month {
+  width: 80px;
+}
+.calendar_date_select td {
+  padding: 0;
+}
 .padding-grid {
   padding: 15px 15px;
 }
@@ -7516,7 +7522,7 @@ table.listTable table {
   padding: 15px 15px;
 }
 #globallinks .globalsearch {
-  padding-left: 24px;
+  padding-left: 12px;
 }
 #globallinks #headerlanguages {
   padding-top: 6px;
