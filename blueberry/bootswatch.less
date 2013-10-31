@@ -9,7 +9,12 @@
 
 // Local Variables ============================================================
 
+@layout-centered:      1;
 @contentmenu-margin:   10px;
+
+.adjust-layout-other(@layout-centered) when (@layout-centered = 0) {
+  @import "xwiki-layout-full.less";
+}
 
 // Navbar =====================================================================
 

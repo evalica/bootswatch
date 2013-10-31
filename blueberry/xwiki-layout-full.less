@@ -1,0 +1,23 @@
+// Blueberry 3.0.0
+// This file contains values and classes specific to XWiki (http://www.xwiki.org)
+// XWiki-Layout: defines how main containers are arranged
+// ----------------------------------------------------------------------------
+
+#edit .leftsidecolumns {
+  padding: 0;
+}
+
+.editbody #editcolumn {
+  padding-left: @grid-gutter-width;
+  padding-right: @grid-gutter-width;
+}
+
+@media (min-width: @screen-md) {
+  #contentcontainer {
+    &.contenthideleft {
+      #contentcolumn {
+        padding-left: @grid-gutter-width;
+      }
+    }
+  }
+}

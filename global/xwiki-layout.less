@@ -4,6 +4,7 @@
 
 // Local Variables ============================================================
 
+@layout-centered:                1; // Default value 'centered'
 @padding-grid-vertical:          @grid-gutter-width / 2;
 @padding-grid-horizontal:        @grid-gutter-width / 2;
 
@@ -17,42 +18,100 @@
   padding: @padding-grid-vertical @grid-gutter-width;
 }
 
+// Selecting Layout Type (Centered, Full Width) ===============================
+
+.adjust-layout-other(@layout-centered) when (@layout-centered = 1) { // Layout: centered
+  @import "xwiki-layout-centered.less";
+}
+
+.adjust-layout-other(@layout-centered) when (@layout-centered = 0) { // Layout: full width
+  //@import "xwiki-layout-full.less"; // BUG: Full width (0) not implemented yet for all themes
+}
+
+.adjust-layout-panels(@layout-centered);
+.adjust-layout-other(@layout-centered);
+
 // Responsive VIEW Layout =====================================================
 
-#contentcontainer {
-  &.content {
-    #leftPanels {
-      &:extend(.col-xs-12);
-      &:extend(.col-sm-12);
-      &:extend(.col-md-3);
-      &:extend(.col-md-pull-6);
-      &:extend(.col-lg-3);
-      &:extend(.col-lg-pull-6);
+.adjust-layout-panels(@layout-centered) when (@layout-centered = 1) {
+  #contentcontainer {
+    &.content {
+      #leftPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-3);
+        &:extend(.col-md-pull-6);
+        &:extend(.col-lg-3);
+        &:extend(.col-lg-pull-6);
+      }
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-6);
+        &:extend(.col-md-push-3);
+        &:extend(.col-lg-6);
+        &:extend(.col-lg-push-3);
+      }
+      #rightPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-3);
+        &:extend(.col-lg-3);
+      }
     }
-    #contentcolumn {
-      &:extend(.col-xs-12);
-      &:extend(.col-sm-12);
-      &:extend(.col-md-6);
-      &:extend(.col-md-push-3);
-      &:extend(.col-lg-6);
-      &:extend(.col-lg-push-3);
+
+    &.contenthideleft {
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-9);
+        &:extend(.col-lg-9);
+      }
+      #rightPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-3);
+        &:extend(.col-lg-3);
+      }
     }
-    #rightPanels {
-      &:extend(.col-xs-12);
-      &:extend(.col-sm-12);
-      &:extend(.col-md-3);
-      &:extend(.col-lg-3);
+
+    &.contenthideright {
+      #leftPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-3);
+        &:extend(.col-md-pull-9);
+        &:extend(.col-lg-3);
+        &:extend(.col-lg-pull-9);
+      }
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-9);
+        &:extend(.col-md-push-3);
+        &:extend(.col-lg-9);
+        &:extend(.col-lg-push-3);
+      }
+    }
+
+    &.contenthidelefthideright {
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-12);
+        &:extend(.col-lg-12);
+      }
     }
   }
 
-  &.contenthideleft {
-    #contentcolumn {
+  #edit {
+    .leftsidecolumns {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-9);
       &:extend(.col-lg-9);
     }
-    #rightPanels {
+    #editPanels {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
       &:extend(.col-md-3);
@@ -60,32 +119,101 @@
     }
   }
 
-  &.contenthideright {
-    #leftPanels {
-      &:extend(.col-xs-12);
-      &:extend(.col-sm-12);
-      &:extend(.col-md-3);
-      &:extend(.col-md-pull-9);
-      &:extend(.col-lg-3);
-      &:extend(.col-lg-pull-9);
+  #globallinks {
+    &:extend(.col-md-3);
+    &:extend(.col-lg-3);
+  }
+}
+
+.adjust-layout-panels(@layout-centered) when (@layout-centered = 0) {
+  #contentcontainer {
+    &.content {
+      #leftPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-2);
+        &:extend(.col-md-pull-8);
+        &:extend(.col-lg-2);
+        &:extend(.col-lg-pull-8);
+      }
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-8);
+        &:extend(.col-md-push-2);
+        &:extend(.col-lg-8);
+        &:extend(.col-lg-push-2);
+      }
+      #rightPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-2);
+        &:extend(.col-lg-2);
+      }
     }
-    #contentcolumn {
-      &:extend(.col-xs-12);
-      &:extend(.col-sm-12);
-      &:extend(.col-md-9);
-      &:extend(.col-md-push-3);
-      &:extend(.col-lg-9);
-      &:extend(.col-lg-push-3);
+
+    &.contenthideleft {
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-10);
+        &:extend(.col-lg-10);
+      }
+      #rightPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-2);
+        &:extend(.col-lg-2);
+      }
+    }
+
+    &.contenthideright {
+      #leftPanels {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-2);
+        &:extend(.col-md-pull-10);
+        &:extend(.col-lg-2);
+        &:extend(.col-lg-pull-10);
+      }
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-10);
+        &:extend(.col-md-push-2);
+        &:extend(.col-lg-10);
+        &:extend(.col-lg-push-2);
+      }
+    }
+
+    &.contenthidelefthideright {
+      #contentcolumn {
+        &:extend(.col-xs-12);
+        &:extend(.col-sm-12);
+        &:extend(.col-md-12);
+        &:extend(.col-lg-12);
+      }
     }
   }
 
-  &.contenthidelefthideright {
-    #contentcolumn {
+  #edit {
+    .leftsidecolumns {
       &:extend(.col-xs-12);
       &:extend(.col-sm-12);
-      &:extend(.col-md-12);
-      &:extend(.col-lg-12);
+      &:extend(.col-md-10);
+      &:extend(.col-lg-10);
     }
+    #editPanels {
+      &:extend(.col-xs-12);
+      &:extend(.col-sm-12);
+      &:extend(.col-md-2);
+      &:extend(.col-lg-2);
+    }
+  }
+
+  #globallinks {
+    &:extend(.col-md-2);
+    &:extend(.col-lg-2);
   }
 }
 
@@ -99,21 +227,6 @@
 }
 
 // Responsive EDIT Layout =====================================================
-
-#edit {
-  .leftsidecolumns {
-    &:extend(.col-xs-12);
-    &:extend(.col-sm-12);
-    &:extend(.col-md-9);
-    &:extend(.col-lg-9);
-  }
-  #editPanels {
-    &:extend(.col-xs-12);
-    &:extend(.col-sm-12);
-    &:extend(.col-md-3);
-    &:extend(.col-lg-3);
-  }
-}
 
 /* Small devices (up to 991px) */
 @media (max-width: (@screen-md - 1px)) { 
@@ -152,11 +265,9 @@
 }
 
 #globallinks { // Align it with the panels
-  &:extend(.col-md-3);
-  &:extend(.col-lg-3);
   .padding-grid;
   .globalsearch {
-    padding-left: 2 * @padding-base-horizontal;
+    padding-left: @padding-base-horizontal;
   }
   #headerlanguages {
     padding-top: @padding-base-vertical;
